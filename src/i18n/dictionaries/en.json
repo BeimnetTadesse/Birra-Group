@@ -1,0 +1,836 @@
+{
+  "meta": {
+    "title": "Birra Group",
+    "description": "Birra Group General Trading PLC exports carefully sourced, graded Ethiopian coffee — with lot-level traceability from farm to shipment."
+  },
+  "nav": {
+    "brandName": "BIRRA GROUP",
+    "about": "About",
+    "coffeeExport": "Coffee Export",
+    "roastery": "Roastery",
+    "news": "News",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "instantQuote": "Instant Quote"
+  },
+  "marquee": [
+    "TOP 20 ETHIOPIAN EXPORTER",
+    "USA · EUROPE · MIDDLE EAST · ASIA",
+    "LOT-LEVEL TRACEABILITY",
+    "FROM SEED TO SHIPMENT",
+    "ESTABLISHED 2004"
+  ],
+  "hero": {
+    "eyebrow": "ADDIS ABABA · EST. 2004",
+    "titleLine1": "Ethiopian Coffee.",
+    "titlePrefix": "From Origin to",
+    "titleWorld": "World.",
+    "subtitle": "Carefully sourced, graded and exported from Ethiopia.",
+    "ctaPrimary": "Explore our coffee",
+    "ctaSecondary": "Partner with us",
+    "stats": [
+      {
+        "value": "30",
+        "suffix": "yrs",
+        "label": "FAMILY EXPORT LEGACY"
+      },
+      {
+        "value": "7,800",
+        "suffix": "t",
+        "label": "EXPORTED LAST YEAR"
+      },
+      {
+        "value": "406",
+        "suffix": "",
+        "label": "CONTAINERS SHIPPED"
+      },
+      {
+        "value": "Top 20",
+        "suffix": "",
+        "label": "ETHIOPIAN EXPORTER"
+      }
+    ],
+    "scrollLabel": "SCROLL"
+  },
+  "story": {
+    "eyebrow": "OUR STORY",
+    "title": "Two generations. One coffee legacy.",
+    "body1": "Birra Group General Trading PLC was established in 2004 by a team of young entrepreneurs from a coffee-farming family, with two generations of production behind them.",
+    "body2": "That family brings roughly 30 years as local suppliers and 15 years as exporters — deep-rooted knowledge of Ethiopian coffee, applied to international markets.",
+    "stat1Value": "2004",
+    "stat1Label": "ESTABLISHED",
+    "stat2Value": "15",
+    "stat2Suffix": "yrs",
+    "stat2Label": "EXPORTING",
+    "readMore": "Read our story",
+    "captionMain": "PHOTO — WASHING STATION, GEDEO",
+    "caption1": "PHOTO — RIPE CHERRY",
+    "caption2": "PHOTO — RAISED BEDS"
+  },
+  "origin": {
+    "eyebrow": "ORIGIN & SOURCING",
+    "title": "Seven origins, one birthplace of Arabica",
+    "atlasLink": "Full origin atlas",
+    "mapHint": "CLICK A REGION",
+    "photoCaption": "PHOTO —",
+    "altitudeLabel": "ALTITUDE",
+    "processLabel": "PROCESS",
+    "varietiesLabel": "VARIETIES",
+    "harvestLabel": "HARVEST",
+    "regions": [
+      {
+        "id": "yirgacheffe",
+        "name": "Yirgacheffe",
+        "subtitle": "SOUTHERN ETHIOPIA",
+        "description": "A wet-processed coffee considered the best high-grown coffee in southern Ethiopia. Slow growth at altitude gives bright acidity, clean intense taste and complex floral aroma, sometimes with berry, wine or citrus undertones.",
+        "altitude": "1,700–2,200 m",
+        "process": "Washed",
+        "varieties": "Ethiopian heirloom",
+        "harvest": "SHG / SHB",
+        "profile": [
+          "Bright acidity",
+          "Floral",
+          "Berry",
+          "Citrus"
+        ],
+        "coord": {
+          "x": 52,
+          "y": 64
+        }
+      },
+      {
+        "id": "sidamo",
+        "name": "Sidamo",
+        "subtitle": "SOUTHERN ETHIOPIA",
+        "description": "Grown across high plateaus south of Yirgacheffe, Sidamo lots range from washed to sun-dried natural, giving a winey, complex cup with berry sweetness and a full body.",
+        "altitude": "1,400–2,200 m",
+        "process": "Washed / Natural",
+        "varieties": "Ethiopian heirloom",
+        "harvest": "SHG / SHB",
+        "profile": [
+          "Winey",
+          "Berry",
+          "Citrus",
+          "Full body"
+        ],
+        "coord": {
+          "x": 49,
+          "y": 60
+        }
+      },
+      {
+        "id": "guji",
+        "name": "Guji",
+        "subtitle": "SOUTHERN OROMIA",
+        "description": "A newer designation neighbouring Yirgacheffe and Sidamo, Guji lots are prized for their floral aroma, stone-fruit sweetness and delicate, tea-like body.",
+        "altitude": "1,800–2,300 m",
+        "process": "Washed / Natural",
+        "varieties": "Ethiopian heirloom",
+        "harvest": "SHG / SHB",
+        "profile": [
+          "Floral",
+          "Stone fruit",
+          "Tea-like",
+          "Sweet"
+        ],
+        "coord": {
+          "x": 58,
+          "y": 62
+        }
+      },
+      {
+        "id": "harrar",
+        "name": "Harrar",
+        "subtitle": "EASTERN ETHIOPIA",
+        "description": "Grown on dry highland terraces east of Addis Ababa and traditionally sun-dried, Harrar delivers a wild, wine-like character with notes of blueberry and dark chocolate.",
+        "altitude": "1,500–2,100 m",
+        "process": "Natural",
+        "varieties": "Ethiopian heirloom",
+        "harvest": "Longberry / Shortberry",
+        "profile": [
+          "Winey",
+          "Blueberry",
+          "Mocha",
+          "Heavy body"
+        ],
+        "coord": {
+          "x": 80,
+          "y": 32
+        }
+      },
+      {
+        "id": "limmu",
+        "name": "Limmu",
+        "subtitle": "WESTERN ETHIOPIA",
+        "description": "Washed lots from the forested highlands of western Oromia, Limmu coffee is well balanced with winey acidity, spice notes and a clean, rounded finish.",
+        "altitude": "1,400–1,900 m",
+        "process": "Washed",
+        "varieties": "Ethiopian heirloom",
+        "harvest": "SHG / SHB",
+        "profile": [
+          "Balanced",
+          "Spice",
+          "Winey",
+          "Clean"
+        ],
+        "coord": {
+          "x": 36,
+          "y": 42
+        }
+      },
+      {
+        "id": "jimma",
+        "name": "Jimma",
+        "subtitle": "SOUTHWESTERN ETHIOPIA",
+        "description": "One of Ethiopia's largest producing zones, Jimma yields both washed and natural lots with a mild acidity, earthy body and approachable, everyday character.",
+        "altitude": "1,400–1,800 m",
+        "process": "Washed / Natural",
+        "varieties": "Ethiopian heirloom",
+        "harvest": "SHG / SHB",
+        "profile": [
+          "Earthy",
+          "Mild",
+          "Full body",
+          "Balanced"
+        ],
+        "coord": {
+          "x": 38,
+          "y": 50
+        }
+      },
+      {
+        "id": "nekemte",
+        "name": "Nekemte",
+        "subtitle": "WESTERN ETHIOPIA",
+        "description": "Grown in the Wollega zone, Nekemte lots are typically naturally processed, producing a fruit-forward, wine-like cup with notes of chocolate and dried fruit.",
+        "altitude": "1,500–2,100 m",
+        "process": "Natural",
+        "varieties": "Ethiopian heirloom",
+        "harvest": "Longberry / Shortberry",
+        "profile": [
+          "Fruit-forward",
+          "Winey",
+          "Chocolate",
+          "Dried fruit"
+        ],
+        "coord": {
+          "x": 32,
+          "y": 36
+        }
+      }
+    ]
+  },
+  "journey": {
+    "eyebrow": "THE JOURNEY",
+    "title": "Eight stages between a cherry and your cup",
+    "dragHint": "DRAG TO EXPLORE",
+    "endLabel": "CHERRY → YOUR CUP",
+    "stages": [
+      {
+        "number": "01",
+        "title": "Farm",
+        "desc": "Grown by smallholder farms and cooperatives across seven Ethiopian regions."
+      },
+      {
+        "number": "02",
+        "title": "Harvest",
+        "desc": "Selective hand-picking, red cherry only, delivered to the nearest station the same afternoon."
+      },
+      {
+        "number": "03",
+        "title": "Processing",
+        "desc": "Depulped and fermented, or dried on raised beds — decided lot by lot against the buyer contract."
+      },
+      {
+        "number": "04",
+        "title": "Drying",
+        "desc": "Sun-dried on raised beds or patios, turned by hand and monitored until target moisture is reached."
+      },
+      {
+        "number": "05",
+        "title": "Milling & Hulling",
+        "desc": "Parchment and dried skin removed, beans cleaned and sized ahead of grading."
+      },
+      {
+        "number": "06",
+        "title": "Grading & Cupping",
+        "desc": "Sorted by screen size and density, then cupped by trained tasters to verify quality and grade."
+      },
+      {
+        "number": "07",
+        "title": "Export Preparation",
+        "desc": "Bagged, documented and compliance-checked, with full lot records prepared for shipment."
+      },
+      {
+        "number": "08",
+        "title": "Shipping",
+        "desc": "Containerized and shipped from the port of Djibouti to markets across the world."
+      }
+    ]
+  },
+  "quality": {
+    "eyebrow": "QUALITY & TRUST",
+    "title": "Every lot inspected and cupped before it ships",
+    "intro": "Quality is maintained across the chain, from harvest and processing through to export preparation, using recognised grading and inspection practice.",
+    "items": [
+      {
+        "number": "01",
+        "title": "International grading standards",
+        "desc": "Globally recognised grading systems applied to every lot before it is offered."
+      },
+      {
+        "number": "02",
+        "title": "Bean size & density",
+        "desc": "Screen size and density assessed as indicators of altitude, maturity and roast behaviour."
+      },
+      {
+        "number": "03",
+        "title": "Moisture content",
+        "desc": "Moisture monitored through processing and verified before export preparation."
+      },
+      {
+        "number": "04",
+        "title": "Professional cupping",
+        "desc": "Each lot inspected and cupped to verify flavour consistency and eliminate defects."
+      },
+      {
+        "number": "05",
+        "title": "Export compliance",
+        "desc": "National and international export regulations followed for documentation, handling and trade practice."
+      },
+      {
+        "number": "06",
+        "title": "Traceability records",
+        "desc": "Clear records across the supply chain, from farming communities through processing centres."
+      }
+    ],
+    "footerNote": "Birra also follows the national and international export requirements covering documentation, handling and trade procedure for every shipment.",
+    "link": "Quality in detail",
+    "detailTitle": "Certifications and credentials",
+    "photoCaption": "PHOTO — CUPPING LAB, ADDIS ABABA"
+  },
+  "traceability": {
+    "eyebrow": "LOT-LEVEL TRACEABILITY",
+    "title": "Scan the bag. Know the coffee.",
+    "body": "Each lot can be connected to information about its journey — origin, processing, quality, lot and shipment — so buyers can follow what they bought from station to delivery.",
+    "sampleLabel": "TRY A SAMPLE LOT — DEMO DATA",
+    "lotCodeLabel": "LOT CODE",
+    "demoLotBadge": "DEMO LOT",
+    "originLabel": "ORIGIN",
+    "originValue": "Washing station confirmed per lot",
+    "processLabel": "PROCESS",
+    "cuppingLabel": "CUPPING",
+    "cuppingValue": "Cupping score confirmed per lot",
+    "harvestLabel": "HARVEST",
+    "harvestValue": "Harvest window and altitude confirmed per lot",
+    "footnote": "Sample record shown to demonstrate how a lot resolves. Real lot data is issued with each shipment.",
+    "lots": [
+      {
+        "code": "DEMO-YRG-01",
+        "region": "Yirgacheffe",
+        "process": "Washed"
+      },
+      {
+        "code": "DEMO-SID-02",
+        "region": "Sidamo",
+        "process": "Natural"
+      },
+      {
+        "code": "DEMO-GUJ-03",
+        "region": "Guji",
+        "process": "Washed"
+      }
+    ]
+  },
+  "availability": {
+    "eyebrow": "LIVE AVAILABILITY",
+    "title": "Lots ready to move",
+    "body": "Self-serve stock by region, so buyers stop waiting on availability emails. The lots shown here are sample data for demonstration.",
+    "filterLabel": "All regions",
+    "columns": {
+      "lot": "SAMPLE LOT",
+      "region": "REGION",
+      "process": "PROCESS",
+      "cup": "CUP PROFILE",
+      "action": "TRACE"
+    },
+    "cupValue": "Confirmed per lot",
+    "rows": [
+      {
+        "code": "DEMO-YRG-01",
+        "region": "Yirgacheffe",
+        "process": "Washed"
+      },
+      {
+        "code": "DEMO-SID-02",
+        "region": "Sidamo",
+        "process": "Natural"
+      },
+      {
+        "code": "DEMO-GUJ-03",
+        "region": "Guji",
+        "process": "Washed"
+      },
+      {
+        "code": "DEMO-LIM-04",
+        "region": "Limmu",
+        "process": "Washed"
+      },
+      {
+        "code": "DEMO-HAR-05",
+        "region": "Harrar",
+        "process": "Natural"
+      },
+      {
+        "code": "DEMO-JIM-06",
+        "region": "Jimma",
+        "process": "Washed"
+      }
+    ],
+    "countLabel": "LOTS SHOWN",
+    "disclaimer": "SAMPLE LOTS FOR DEMONSTRATION — NOT LIVE STOCK"
+  },
+  "quote": {
+    "eyebrow": "INSTANT QUOTE",
+    "title": "Price your container before you write the email",
+    "body": "Pick a grade, a volume and a destination port for an indicative FOB estimate and lead time. Send it through and we will confirm against live lots within a working day.",
+    "minOrderLabel": "MINIMUM ORDER",
+    "minOrderValue": "1 MT",
+    "fullContainerLabel": "FULL CONTAINER",
+    "fullContainerValue": "19.2 MT",
+    "incotermsLabel": "INCOTERMS",
+    "incotermsValue": "FOB",
+    "gradeLabel": "GRADE",
+    "grades": [
+      "Specialty",
+      "G1",
+      "G2",
+      "G3",
+      "G4"
+    ],
+    "volumeLabel": "VOLUME",
+    "portLabel": "DESTINATION PORT",
+    "ports": [
+      "Rotterdam",
+      "Jeddah",
+      "New York",
+      "Shanghai"
+    ],
+    "estUnitLabel": "EST. UNIT",
+    "estTotalLabel": "EST. TOTAL",
+    "leadTimeNote": "Lead time {days} days · {discount} volume discount applied.",
+    "noDiscount": "No",
+    "disclaimer": "Indicative FOB Djibouti pricing for planning only. Formal offers confirm after lot selection and QC.",
+    "submit": "Send quote request",
+    "submitted": "Request received — we'll follow up"
+  },
+  "reach": {
+    "eyebrow": "GLOBAL REACH",
+    "title": "Local origin. Global reach.",
+    "subtitle": "Birra serves markets across the USA, Europe, the Middle East and Asia — more than 7,800 tons across 406 containers last year.",
+    "stats": [
+      {
+        "value": "4 regions",
+        "label": "MARKETS SERVED"
+      },
+      {
+        "value": "406",
+        "label": "CONTAINERS LAST YEAR"
+      },
+      {
+        "value": "7,800+",
+        "label": "TONS LAST YEAR"
+      },
+      {
+        "value": "Djibouti",
+        "label": "PRIMARY PORT"
+      }
+    ],
+    "tickerRegions": [
+      "Yirgacheffe",
+      "Sidamo",
+      "Guji",
+      "Harrar",
+      "Limmu",
+      "Jimma",
+      "Nekemte"
+    ]
+  },
+  "why": {
+    "eyebrow": "WHY BIRRA COFFEE?",
+    "title": "Authentic Ethiopian coffee, delivered professionally",
+    "body": "From careful sourcing at origin through to export documentation, the team works to meet international standards, timelines and quality expectations — for importers, roasters and distributors alike.",
+    "link": "Coffee export in detail",
+    "items": [
+      {
+        "number": "01",
+        "title": "Farmer relationships",
+        "desc": "Direct, long-standing relationships with farmers and cooperatives."
+      },
+      {
+        "number": "02",
+        "title": "Modern processing",
+        "desc": "Wet and dry processing, hulling, grading and sorting under one operation."
+      },
+      {
+        "number": "03",
+        "title": "Secure storage",
+        "desc": "Warehousing that protects moisture and bean integrity before shipment."
+      },
+      {
+        "number": "04",
+        "title": "Quality control",
+        "desc": "Inspection and cupping through every stage of preparation."
+      },
+      {
+        "number": "05",
+        "title": "Traceability",
+        "desc": "Clear supply-chain information from origin through to shipment."
+      },
+      {
+        "number": "06",
+        "title": "Export experience",
+        "desc": "Fifteen years serving international coffee markets."
+      }
+    ]
+  },
+  "partner": {
+    "eyebrow": "PARTNER WITH BIRRA",
+    "title": "Tell us your grade, volume and port and our export desk will follow up.",
+    "emailCta": "contact@birra-group.com",
+    "aiCta": "Ask the AI assistant"
+  },
+  "aiChat": {
+    "launcher": "Ask AI",
+    "title": "Birra AI Assistant",
+    "demoNote": "Demo assistant — answers below are illustrative, not live data.",
+    "greeting": "Hi, I'm the Birra AI Assistant. Ask about pricing, ports, grades or certifications — or pick a question below.",
+    "quickLabel": "QUICK QUESTIONS",
+    "inputPlaceholder": "Type a question…",
+    "sendLabel": "Send",
+    "fallback": "That's a great one for our export desk — email them directly and they'll get back to you within a working day.",
+    "meanwhile": "Still have questions? Our export desk can help directly.",
+    "emailCta": "Email the export desk",
+    "questions": [
+      {
+        "q": "What's your minimum order?",
+        "a": "Our minimum order is 1 MT, and a full container load is about 19.2 MT — priced FOB.",
+        "keywords": ["minimum", "moq", "smallest", "order size"]
+      },
+      {
+        "q": "What grades do you offer?",
+        "a": "We supply Specialty, G1, G2, G3 and G4 grades, each cupped and graded before it's offered.",
+        "keywords": ["grade", "grades", "specialty", "quality level"]
+      },
+      {
+        "q": "Which ports do you ship to?",
+        "a": "We ship FOB Djibouti to Rotterdam, Jeddah, New York and Shanghai, serving 4 regions overall — USA, Europe, the Middle East and Asia.",
+        "keywords": ["port", "ports", "ship to", "destination", "market", "markets"]
+      },
+      {
+        "q": "How long does shipping take?",
+        "a": "Lead time is typically 18–40 days depending on the destination port, confirmed once your lot is selected.",
+        "keywords": ["lead time", "how long", "shipping time", "days", "delivery"]
+      },
+      {
+        "q": "Do you offer private label or roasted coffee?",
+        "a": "Yes — private label and roasted coffee in food-grade packaging, alongside our core green coffee export.",
+        "keywords": ["private label", "roasted", "roastery", "roast"]
+      },
+      {
+        "q": "What quality checks do you do?",
+        "a": "Every lot passes five checkpoints — at station, drying, hulling & grading, cupping and shipment prep — plus international grading standards and full traceability records.",
+        "keywords": ["quality", "certification", "certifications", "checks", "inspection", "cupping"]
+      },
+      {
+        "q": "How do I get a quote?",
+        "a": "Use the Instant Quote calculator on our homepage — pick a grade, volume and port for an indicative FOB price — or I can connect you with our export desk.",
+        "keywords": ["quote", "price", "pricing", "cost", "estimate"]
+      },
+      {
+        "q": "Tell me about Birra Group.",
+        "a": "Birra Group General Trading PLC was founded in 2004 in Addis Ababa. We're a two-generation coffee family that shipped 7,800+ tons across 406 containers last year — a top 20 Ethiopian exporter.",
+        "keywords": ["about", "birra group", "company", "history", "founded"]
+      }
+    ]
+  },
+  "footer": {
+    "description": "Birra Group General Trading PLC. Established 2004 in Addis Ababa, with two generations of Ethiopian coffee behind it.",
+    "subLabel": "FROM SEED TO SHIPMENT",
+    "contactTitle": "CONTACT",
+    "email": "contact@birra-group.com",
+    "phone": "+251 915 012 599",
+    "addressLine1": "Wollo Sefer, Birra Tower",
+    "addressLine2": "Ethio China St, Addis Ababa",
+    "exploreTitle": "EXPLORE",
+    "exploreLinks": [
+      "Origins",
+      "Coffee",
+      "Coffee Export",
+      "Coffee Roastery",
+      "About Birra Group",
+      "Quality",
+      "News",
+      "Gallery"
+    ],
+    "languageTitle": "LANGUAGE",
+    "rightsText": "Birra Group General Trading PLC. All rights reserved.",
+    "businessLines": [
+      "Birra Coffee"
+    ]
+  },
+  "exportPage": {
+    "hero": {
+      "eyebrow": "BIRRA COFFEE EXPORT",
+      "title": "Green coffee, contracted and shipped",
+      "body": "The export desk handles everything between the washing station and your warehouse: sourcing, processing, grading, quality control, documentation and delivery out of Djibouti.",
+      "ctaPrimary": "Get an instant quote",
+      "ctaSecondary": "See live availability",
+      "stats": [
+        { "value": "7,800+", "suffix": "t", "label": "EXPORTED LAST YEAR", "desc": "Shipped by Birra and its sister companies." },
+        { "value": "406", "suffix": "", "label": "CONTAINERS LAST YEAR", "desc": "Equivalent to the tonnage above." },
+        { "value": "4 regions", "suffix": "", "label": "MARKETS SERVED", "desc": "USA, Europe, the Middle East and Asia." },
+        { "value": "Top 20", "suffix": "", "label": "NATIONAL RANKING", "desc": "Among Ethiopia's coffee exporters." },
+        { "value": "15", "suffix": "yrs", "label": "EXPORT EXPERIENCE", "desc": "Serving international coffee markets." },
+        { "value": "Djibouti", "suffix": "", "label": "PRIMARY PORT", "desc": "Incoterms and lead times confirmed per contract." }
+      ]
+    },
+    "capacity": {
+      "eyebrow": "PROCESSING & CAPACITY",
+      "title": "Processing and capacity",
+      "items": [
+        { "number": "01", "title": "Modern processing", "desc": "Advanced wet and dry processing facilities handling each batch through washing, drying, hulling, grading and sorting." },
+        { "number": "02", "title": "Quality control", "desc": "Cherries evaluated on arrival, processed under controlled conditions and monitored for moisture level and bean integrity." },
+        { "number": "03", "title": "Export capacity", "desc": "Scalable capacity for global demand, serving both large commercial orders and specialised boutique requests." },
+        { "number": "04", "title": "Skilled workforce", "desc": "Experienced professionals who treat processing as both a science and a craft, keeping shipments consistent." },
+        { "number": "05", "title": "Traceable supply chain", "desc": "Records maintained from farm through shipment, so origin and authenticity can be confirmed." },
+        { "number": "06", "title": "Continuous investment", "desc": "Ongoing investment in modern equipment, operational capability and the logistics network." }
+      ]
+    },
+    "packing": {
+      "title": "Packing and formats",
+      "body": "Packing is agreed per contract. Lined and vacuum options are available on request.",
+      "items": [
+        { "title": "60 kg jute bags", "desc": "Standard green coffee packing for export", "tag": "Per contract" },
+        { "title": "Lined jute bags", "desc": "Available on request for specialty lots", "tag": "On request" },
+        { "title": "Vacuum packing", "desc": "Available on request for small parcels and samples", "tag": "On request" },
+        { "title": "Valve bags, roasted", "desc": "Roastery output for roasted product", "tag": "On request" }
+      ]
+    },
+    "documents": {
+      "title": "Documentation pack",
+      "body": "Prepared per shipment against the lot number. The exact set depends on destination requirements.",
+      "items": [
+        "Commercial invoice",
+        "Packing list",
+        "Bill of lading",
+        "Certificate of origin",
+        "Phytosanitary certificate",
+        "Weight & quality certificate",
+        "Inspection documents",
+        "Destination-specific paperwork"
+      ],
+      "photoCaption": "PHOTO — CONTAINER STUFFING, ADDIS WAREHOUSE"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "eyebrow": "ABOUT BIRRA GROUP",
+      "title": "Two generations. One coffee legacy.",
+      "body1": "Birra Group General Trading PLC was established in 2004 by a team of passionate and experienced young entrepreneurs. The owners come from a coffee-farming family with two generations as producers, roughly 30 years as local suppliers and 15 years as exporters.",
+      "body2": "Birra and its sister companies exported more than 7,800 tons across 406 containers last year, reaching a position among the top 20 coffee exporters in Ethiopia."
+    },
+    "journey": {
+      "eyebrow": "OUR JOURNEY",
+      "title": "Milestones behind the business",
+      "items": [
+        { "value": "2004", "label": "BIRRA GROUP ESTABLISHED", "desc": "Founded by a team of young entrepreneurs with deep roots in Ethiopian coffee." },
+        { "value": "Two generations", "label": "A FAMILY COFFEE LEGACY", "desc": "The founders come from a family of coffee producers with generations of experience." },
+        { "value": "30 years", "label": "FAMILY SUPPLY & EXPORT LEGACY", "desc": "Roughly three decades of experience in local coffee supply and production." },
+        { "value": "15 years", "label": "INTERNATIONAL EXPORT EXPERIENCE", "desc": "Around fifteen years serving international coffee markets." },
+        { "value": "7,800+ tons", "label": "COFFEE EXPORTED LAST YEAR", "desc": "Birra and its sister companies shipped more than 7,800 tons, equal to 406 containers." },
+        { "value": "Top 20", "label": "ETHIOPIAN COFFEE EXPORTER", "desc": "The group has reached a position among Ethiopia's top 20 coffee exporters." }
+      ]
+    },
+    "values": {
+      "eyebrow": "CORE VALUES",
+      "title": "How we do business",
+      "items": [
+        { "title": "Integrity", "desc": "We conduct business with high ethical standards, transparency and honesty." },
+        { "title": "Partnership", "desc": "We build lasting relationships with clients, partners, farmers and communities." },
+        { "title": "Innovation", "desc": "We continuously seek better ways to meet evolving market needs." },
+        { "title": "Global vision", "desc": "We think globally while maintaining deep local knowledge and relationships." }
+      ],
+      "recognitionLabel": "RECOGNITION",
+      "badges": ["Best Exporter 2023", "Quality Excellence Award"]
+    },
+    "sourcing": {
+      "eyebrow": "RESPONSIBLE SOURCING",
+      "title": "Long-term relationships, at origin",
+      "items": [
+        { "title": "Sustainable sourcing", "desc": "Responsible sourcing practices that support long-term coffee production." },
+        { "title": "Direct farmer partnerships", "desc": "Strong relationships with farmers and coffee-producing communities." },
+        { "title": "Community development", "desc": "Supporting initiatives that contribute to the communities connected to the business." }
+      ],
+      "stats": [
+        { "label": "MARKETS SERVED", "value": "4 regions" },
+        { "label": "ESTABLISHED", "value": "2004" },
+        { "label": "EXPORTED LAST YEAR", "value": "7,800 t" },
+        { "label": "RANKING", "value": "Top 20" }
+      ],
+      "photoCaption": "PHOTO — BIRRA TEAM, ADDIS ABABA"
+    },
+    "businesses": {
+      "eyebrow": "OUR COFFEE BUSINESSES",
+      "title": "Coffee under Birra Group",
+      "cards": [
+        {
+          "photoCaption": "PHOTO — COFFEE EXPORT",
+          "eyebrowLabel": "COFFEE TRADING & EXPORT",
+          "title": "Coffee Export",
+          "desc": "End-to-end coffee trading and export, from sourcing and processing through quality assurance, documentation and international delivery.",
+          "linkLabel": "Explore coffee export"
+        },
+        {
+          "photoCaption": "PHOTO — COFFEE ROASTERY",
+          "eyebrowLabel": "ROASTING",
+          "title": "Coffee Roastery",
+          "desc": "Freshly roasted Ethiopian coffee prepared for global markets and for local enjoyment.",
+          "linkLabel": "Explore the roastery"
+        }
+      ]
+    }
+  },
+  "roasteryPage": {
+    "hero": {
+      "eyebrow": "BIRRA COFFEE ROASTERY",
+      "title": "Freshly roasted, ready for market",
+      "pendingBadge": "ROAST PROFILES AND PACK SIZES PENDING CONFIRMATION",
+      "body": "Carefully selected Ethiopian beans roasted under controlled processes to preserve their natural aroma, flavour and character — for international export, local wholesalers and individual consumers.",
+      "stats": [
+        { "label": "ROASTING", "value": "Controlled" },
+        { "label": "PACKAGING", "value": "Food-grade" },
+        { "label": "PACK SIZES", "value": "Multiple" },
+        { "label": "MARKETS", "value": "Export & local" }
+      ]
+    },
+    "roasted": {
+      "eyebrow": "ROASTED COFFEE",
+      "title": "Roasted, packed and ready for market",
+      "items": [
+        { "number": "01", "title": "Freshly roasted", "desc": "Carefully roasted to preserve the natural aroma, flavour and quality of Ethiopian coffee." },
+        { "number": "02", "title": "Export distribution", "desc": "Supplied to international markets with consistent quality and professional packaging." },
+        { "number": "03", "title": "Wholesale supply", "desc": "Available for local wholesalers with reliable supply and competitive pricing." },
+        { "number": "04", "title": "Retail-ready packs", "desc": "Offered in different weight packages suitable for individual consumers." },
+        { "number": "05", "title": "Quality packaging", "desc": "Packed using food-grade materials to maintain freshness and hygiene." },
+        { "number": "06", "title": "Ready for market", "desc": "Prepared for immediate distribution across retail, wholesale and export markets." }
+      ],
+      "channels": [
+        {
+          "photoCaption": "PACK SHOT — EXPORT DISTRIBUTION",
+          "eyebrowLabel": "INTERNATIONAL MARKETS",
+          "title": "Export distribution",
+          "desc": "Supplied to international markets with consistent quality and professional packaging.",
+          "tags": ["Consistent quality", "Professional packaging"]
+        },
+        {
+          "photoCaption": "PACK SHOT — WHOLESALE SUPPLY",
+          "eyebrowLabel": "LOCAL WHOLESALERS",
+          "title": "Wholesale supply",
+          "desc": "Available for local wholesalers with reliable supply and competitive pricing.",
+          "tags": ["Reliable supply", "Competitive pricing"]
+        },
+        {
+          "photoCaption": "PACK SHOT — RETAIL-READY PACKS",
+          "eyebrowLabel": "INDIVIDUAL CONSUMERS",
+          "title": "Retail-ready packs",
+          "desc": "Offered in different weight packages suitable for individual consumers, packed in food-grade materials.",
+          "tags": ["Multiple sizes", "Food-grade packing"]
+        }
+      ]
+    },
+    "privateLabel": {
+      "eyebrow": "PRIVATE LABEL",
+      "title": "Your brand, our roastery",
+      "body": "We handle roast development, cupping approval, bagging and labelling to your artwork, then ship under your own carton. Volumes and terms are agreed per contract.",
+      "steps": [
+        { "number": "01", "title": "Profile brief", "desc": "Tell us the cup you want, or send a reference roast for us to work from." },
+        { "number": "02", "title": "Roast development", "desc": "Sample roasts prepared and cupped with you before anything is committed." },
+        { "number": "03", "title": "Artwork & packing", "desc": "Your labels applied to agreed bag formats and cartoned to your specification." },
+        { "number": "04", "title": "Production & ship", "desc": "Volumes, timing and terms agreed per contract, then shipped direct." }
+      ],
+      "cta": "Discuss private label",
+      "photoCaptionMain": "PHOTO — DRUM ROASTER, ADDIS ROASTERY",
+      "photoCaption1": "PHOTO — VALVE BAG LINE",
+      "photoCaption2": "PHOTO — ROAST PROFILING"
+    }
+  },
+  "contactPage": {
+    "eyebrow": "CONTACT",
+    "title": "Talk to Birra Group",
+    "body": "Buyers, roasters, distributors and partners — tell us what you need and the right desk will come back to you.",
+    "emailLabel": "EMAIL",
+    "phoneLabel": "PHONE",
+    "officeLabel": "HEAD OFFICE",
+    "officeValue": "Wollo Sefer, Birra Tower, Ethio China St, Addis Ababa",
+    "marketsLabel": "MARKETS SERVED",
+    "marketsValue": "USA · Europe · Middle East · Asia",
+    "emailCta": "Email the export desk",
+    "aiCta": "Ask the AI assistant",
+    "form": {
+      "title": "Send an enquiry",
+      "nameLabel": "NAME",
+      "namePlaceholder": "Your full name",
+      "companyLabel": "COMPANY",
+      "companyPlaceholder": "Company or roastery",
+      "emailLabel": "EMAIL",
+      "emailPlaceholder": "you@company.com",
+      "countryLabel": "COUNTRY",
+      "countryPlaceholder": "Destination market",
+      "messageLabel": "MESSAGE",
+      "messagePlaceholder": "Grade, volume, destination port and timing",
+      "submit": "Send enquiry"
+    }
+  },
+  "galleryPage": {
+    "eyebrow": "GALLERY",
+    "title": "From farm to warehouse",
+    "body": "Every frame below is a labelled slot. Drop the real photography in and the grid holds its composition.",
+    "items": [
+      "Coffee Farm, Highlands",
+      "Ripe Cherry",
+      "Handpicked Harvest",
+      "Washing Station",
+      "Raised Drying Beds",
+      "Hulling & Grading",
+      "Sorting Line",
+      "Warehouse Storage",
+      "Cupping Table",
+      "Roastery Floor",
+      "Container Loading",
+      "Export Warehouse"
+    ]
+  },
+  "newsPage": {
+    "eyebrow": "NEWS & UPDATES",
+    "title": "From the group",
+    "body": "Harvest updates, shipment news and announcements from across Birra Group. Slots below are ready for real articles — send the copy and images and they drop straight in.",
+    "photoCaption": "PHOTO — ARTICLE IMAGE",
+    "slotDesc": "Slot — headline, date and a short summary",
+    "articles": [
+      { "category": "COFFEE EXPORT", "title": "Export update" },
+      { "category": "ORIGINS", "title": "From the growing regions" },
+      { "category": "ROASTERY", "title": "Roasted coffee news" }
+    ],
+    "more": {
+      "eyebrow": "MORE FROM THE GROUP",
+      "title": "Across coffee export and the roastery",
+      "link": "Coffee export",
+      "items": [
+        { "label": "GROUP", "title": "Group announcement" },
+        { "label": "QUALITY", "title": "Quality and compliance" },
+        { "label": "EVENTS", "title": "Trade events" }
+      ]
+    }
+  }
+}
