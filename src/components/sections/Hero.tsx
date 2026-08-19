@@ -47,11 +47,19 @@ export default function Hero({ dict }: { dict: Dictionary }) {
       );
     }
     const numeric = Number(value.replace(/,/g, ""));
+    // Non-numeric values (e.g. "PREMIUM", "GLOBAL") render as-is, no count-up.
+    if (Number.isNaN(numeric)) {
+      return (
+        <span className="font-display text-2xl sm:text-3xl lg:text-4xl font-normal text-cream-100 leading-tight">
+          {value}
+        </span>
+      );
+    }
     return (
-      <span className="font-display text-3xl sm:text-4xl lg:text-[42px] font-normal text-cream-100 leading-none">
+      <span className="font-display text-2xl sm:text-3xl lg:text-4xl font-normal text-cream-100 leading-none">
         <CountUp value={numeric} from={startValueFor(numeric)} delay={0} />
         {suffix && (
-          <span className="ms-1.5 text-base font-sans font-normal text-gold-400">
+          <span className="ms-1 text-base font-sans font-normal text-gold-400">
             {suffix}
           </span>
         )}

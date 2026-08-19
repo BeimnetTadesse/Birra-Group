@@ -16,7 +16,7 @@ export default function CoreValues({ dict }: { dict: Dictionary }) {
           </h2>
         </AnimatedSection>
 
-        <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-cream-100/10 bg-cream-100/10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-cream-100/10 bg-cream-100/10 sm:grid-cols-2 lg:grid-cols-5">
           {v.items.map((it, i) => (
             <AnimatedSection key={it.title} delay={i * 0.05} className="bg-pine-900 p-7">
               <h3 className="font-display text-xl text-cream-100">{it.title}</h3>

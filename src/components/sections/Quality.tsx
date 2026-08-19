@@ -1,10 +1,9 @@
 import type { Dictionary } from "@/i18n/getDictionary";
-import type { Locale } from "@/i18n/config";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
-export default function Quality({ dict, locale }: { dict: Dictionary; locale: Locale }) {
+export default function Quality({ dict }: { dict: Dictionary }) {
   return (
     <section id="quality" className="relative bg-pine-700 py-24 sm:py-32">
       <Container>
@@ -32,14 +31,8 @@ export default function Quality({ dict, locale }: { dict: Dictionary; locale: Lo
           ))}
         </div>
 
-        <AnimatedSection className="mt-10 flex flex-col gap-4 border-t border-cream-100/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <AnimatedSection className="mt-10 border-t border-cream-100/10 pt-8">
           <p className="max-w-2xl text-sm text-cream-100/60">{dict.quality.footerNote}</p>
-          <a
-            href={`/${locale}/quality`}
-            className="shrink-0 text-sm text-gold-400 underline underline-offset-4 hover:text-gold-300"
-          >
-            {dict.quality.link} →
-          </a>
         </AnimatedSection>
       </Container>
     </section>

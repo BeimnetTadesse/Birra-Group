@@ -4,11 +4,8 @@ import Hero from "@/components/sections/Hero";
 import Story from "@/components/sections/Story";
 import Origin from "@/components/sections/Origin";
 import Journey from "@/components/sections/Journey";
-import Traceability from "@/components/sections/Traceability";
-import Availability from "@/components/sections/Availability";
-import InstantQuote from "@/components/sections/InstantQuote";
+import OurBusiness from "@/components/sections/OurBusiness";
 import GlobalReach from "@/components/sections/GlobalReach";
-import WhyBirra from "@/components/sections/WhyBirra";
 import Partner from "@/components/sections/Partner";
 
 export default async function Home({
@@ -25,12 +22,9 @@ export default async function Home({
       <Story dict={dict} locale={locale} />
       <Origin dict={dict} />
       <Journey dict={dict} />
-      <Traceability dict={dict} />
-      <Availability dict={dict} />
-      <InstantQuote dict={dict} />
       <GlobalReach dict={dict} />
-      <WhyBirra dict={dict} />
-      <Partner dict={dict} />
+      <OurBusiness dict={dict} />
+      <Partner dict={dict} locale={locale} />
     </>
   );
 }

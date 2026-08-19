@@ -8,10 +8,10 @@ export default function Marquee({
   return (
     <div className={`overflow-hidden ${className}`}>
       <div className="marquee-track">
-        {[0, 1].map((dup) => (
+        {[0, 1, 2, 3].map((dup) => (
           <ul
             key={dup}
-            aria-hidden={dup === 1}
+            aria-hidden={dup > 0}
             className="flex shrink-0 items-center gap-10 pe-10"
           >
             {items.map((item, i) => (

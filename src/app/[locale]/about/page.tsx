@@ -33,7 +33,7 @@ export default async function AboutPage({
       <AboutHero dict={dict} />
       <Milestones dict={dict} />
       <CoreValues dict={dict} />
-      <Quality dict={dict} locale={locale} />
+      <Quality dict={dict} />
       <ResponsibleSourcing dict={dict} />
       <CoffeeBusinesses dict={dict} locale={locale} />
     </>

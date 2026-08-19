@@ -1,11 +1,12 @@
 "use client";
 
 import type { Dictionary } from "@/i18n/getDictionary";
+import type { Locale } from "@/i18n/config";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
-export default function Partner({ dict }: { dict: Dictionary }) {
+export default function Partner({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   return (
     <section id="partner" className="relative bg-partner-glow py-28 sm:py-36">
       <Container className="text-center">
@@ -14,13 +15,14 @@ export default function Partner({ dict }: { dict: Dictionary }) {
           <h2 className="mt-6 font-display text-3xl sm:text-4xl lg:text-5xl text-cream-100 text-balance">
             {dict.partner.title}
           </h2>
+          <p className="mt-5 text-cream-100/70">{dict.partner.subtitle}</p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <a
-              href={`mailto:${dict.partner.emailCta}`}
+              href={`/${locale}/contact`}
               className="rounded-full bg-gold-400 px-7 py-3 text-sm font-medium tracking-wide text-pine-950 transition-transform hover:scale-105 hover:bg-gold-300"
             >
-              {dict.partner.emailCta}
+              {dict.partner.contactCta}
             </a>
             <a
               href="#ai-assistant"

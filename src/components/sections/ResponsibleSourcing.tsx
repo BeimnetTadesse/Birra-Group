@@ -45,6 +45,7 @@ export default function ResponsibleSourcing({ dict }: { dict: Dictionary }) {
                 alt={s.photoCaption}
                 fill
                 sizes="(min-width: 1024px) 40vw, 90vw"
+                loading="eager"
                 className="object-cover"
               />
               <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">

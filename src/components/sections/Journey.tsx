@@ -1,10 +1,26 @@
 "use client";
 
 import { useRef, type PointerEvent } from "react";
+import Image from "next/image";
 import type { Dictionary } from "@/i18n/getDictionary";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+
+const stageImages = [
+  "/images/journey/1-farm.png",
+  "/images/journey/2-harvest.png",
+  "/images/journey/3-processing.png",
+  "/images/journey/4-drying.png",
+  "/images/journey/5-milling.jpg",
+  "/images/journey/6-grading.png",
+  "/images/journey/7-export.jpg",
+  "/images/journey/8-shipping.png",
+];
+
+const stageImagePosition: Record<number, string> = {
+  2: "50% 0%",
+};
 
 export default function Journey({ dict }: { dict: Dictionary }) {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -50,12 +66,18 @@ export default function Journey({ dict }: { dict: Dictionary }) {
         {dict.journey.stages.map((stage, i) => (
           <div
             key={stage.number}
-            className="w-[78vw] max-w-[300px] shrink-0 select-none overflow-hidden rounded-xl border border-ink-700/10 bg-white/60"
+            className="w-[78vw] max-w-[300px] shrink-0 select-none overflow-hidden rounded-xl border border-ink-700/10 bg-white/60 transition-shadow duration-300 hover:border-gold-400/40 hover:shadow-[0_8px_30px_-6px_rgba(239,169,36,0.25)]"
           >
-            <div className="texture-lines-light relative aspect-[4/3] bg-cream-200">
-              <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-ink-500/70">
-                PHOTO — {stage.title.toUpperCase()}
-              </span>
+            <div className="relative aspect-[4/3] bg-cream-200 overflow-hidden">
+              <Image
+                src={stageImages[i] ?? ""}
+                alt={stage.title}
+                fill
+                sizes="300px"
+                loading="eager"
+                className="object-cover"
+                style={{ objectPosition: stageImagePosition[i] ?? "50% 50%" }}
+              />
             </div>
             <div className="p-5">
               <span className="font-mono text-xs text-gold-600">{stage.number}</span>

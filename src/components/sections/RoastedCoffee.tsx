@@ -6,9 +6,9 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 
 const barColors = ["#f3c66b", "#e0940f", "#c9820c", "#b8760c", "#8a5b09", "#6b4607"];
 const channelImages = [
-  "/images/journey-4.jpg",
-  "/images/journey-5.jpg",
-  "/images/journey-6.jpg",
+  "/images/roastery/channel-export.png",
+  "/images/roastery/channel-wholesale.png",
+  "/images/roastery/channel-retail.png",
 ];
 
 export default function RoastedCoffee({ dict }: { dict: Dictionary }) {
@@ -43,19 +43,20 @@ export default function RoastedCoffee({ dict }: { dict: Dictionary }) {
           ))}
         </div>
 
-        <div className="mt-6 grid gap-6 sm:grid-cols-3">
+        <div className="mt-10 grid gap-6 border-t border-ink-700/10 pt-10 sm:grid-cols-3">
           {r.channels.map((ch, i) => (
             <AnimatedSection
               key={ch.title}
               delay={i * 0.06}
               className="overflow-hidden rounded-xl border border-ink-700/10 bg-white"
             >
-              <div className="relative aspect-[16/10]">
+              <div className="relative aspect-square">
                 <Image
                   src={channelImages[i % channelImages.length]}
                   alt={ch.title}
                   fill
                   sizes="(min-width: 640px) 33vw, 90vw"
+                  loading="eager"
                   className="object-cover"
                 />
                 <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">

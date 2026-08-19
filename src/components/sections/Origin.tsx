@@ -20,6 +20,17 @@ const MAP_COORDS: Record<string, { x: number; y: number }> = {
   nekemte: { x: 29.3, y: 50.8 },
 };
 
+// Origin photography, keyed to region id (files in /public/images/origins).
+const ORIGIN_PHOTOS: Record<string, string> = {
+  yirgacheffe: "/images/origins/yirgacheffe.webp",
+  sidamo: "/images/origins/sidamo.webp",
+  guji: "/images/origins/guji.jpg",
+  harrar: "/images/origins/harrar.jpg",
+  limmu: "/images/origins/limmu.jpg",
+  jimma: "/images/origins/jimma.jpg",
+  nekemte: "/images/origins/lekempti.jpg",
+};
+
 export default function Origin({ dict }: { dict: Dictionary }) {
   const regions = dict.origin.regions;
   const [activeId, setActiveId] = useState(regions[0].id);
@@ -28,19 +39,11 @@ export default function Origin({ dict }: { dict: Dictionary }) {
   return (
     <section id="origin" className="texture-lines relative bg-pine-900 py-14 sm:py-16">
       <Container>
-        <AnimatedSection className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <Eyebrow>{dict.origin.eyebrow}</Eyebrow>
-            <h2 className="mt-4 max-w-xl font-display text-2xl sm:text-3xl lg:text-4xl text-cream-100">
-              {dict.origin.title}
-            </h2>
-          </div>
-          <a
-            href="#"
-            className="text-sm text-gold-400 underline underline-offset-4 hover:text-gold-300"
-          >
-            {dict.origin.atlasLink} →
-          </a>
+        <AnimatedSection>
+          <Eyebrow>{dict.origin.eyebrow}</Eyebrow>
+          <h2 className="mt-4 max-w-xl font-display text-2xl sm:text-3xl lg:text-4xl text-cream-100">
+            {dict.origin.title}
+          </h2>
         </AnimatedSection>
 
         <div className="mt-8 grid gap-6 lg:grid-cols-2">
@@ -51,6 +54,7 @@ export default function Origin({ dict }: { dict: Dictionary }) {
                 alt="Map of Ethiopia's coffee growing regions"
                 fill
                 sizes="(min-width: 1024px) 40vw, 90vw"
+                loading="eager"
                 className="object-cover"
               />
               <svg
@@ -118,10 +122,19 @@ export default function Origin({ dict }: { dict: Dictionary }) {
           <AnimatedSection delay={0.1}>
             <div
               key={active.id}
-              className="texture-lines relative aspect-[16/6] overflow-hidden rounded-xl border border-cream-100/20 bg-gradient-to-br from-pine-500 to-pine-700"
+              className="relative aspect-[16/9] overflow-hidden rounded-xl border border-cream-100/20 bg-pine-800"
             >
-              <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
-                {dict.origin.photoCaption} {active.name.toUpperCase()}
+              <Image
+                src={ORIGIN_PHOTOS[active.id] ?? "/images/ethiopia-map.jpg"}
+                alt={`${active.name} coffee growing region, Ethiopia`}
+                fill
+                sizes="(min-width: 1024px) 40vw, 90vw"
+                loading="eager"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-pine-950/60 via-transparent to-transparent" />
+              <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/90 bg-pine-950/50 px-2 py-1 rounded">
+                {active.name.toUpperCase()}
               </span>
             </div>
 

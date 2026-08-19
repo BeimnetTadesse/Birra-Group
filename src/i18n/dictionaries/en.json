@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Birra Group",
-    "description": "Birra Group General Trading PLC exports carefully sourced, graded Ethiopian coffee — with lot-level traceability from farm to shipment."
+    "description": "Birra Group — a diversified Ethiopian enterprise rooted in premium Arabica coffee export and roasting. CERES & USDA organic certified, shipping to the Middle East, Europe, the Americas and Asia."
   },
   "nav": {
     "brandName": "BIRRA GROUP",
@@ -14,14 +14,14 @@
     "instantQuote": "Instant Quote"
   },
   "marquee": [
-    "TOP 20 ETHIOPIAN EXPORTER",
-    "USA · EUROPE · MIDDLE EAST · ASIA",
-    "LOT-LEVEL TRACEABILITY",
-    "FROM SEED TO SHIPMENT",
+    "PREMIUM ETHIOPIAN ARABICA",
+    "MIDDLE EAST · EUROPE · AMERICAS · ASIA",
+    "CERES & USDA ORGANIC CERTIFIED",
+    "FROM ORIGIN TO CUP",
     "ESTABLISHED 2004"
   ],
   "hero": {
-    "eyebrow": "ADDIS ABABA · EST. 2004",
+    "eyebrow": "ADDIS ABABA · EST. 2010",
     "titleLine1": "Ethiopian Coffee.",
     "titlePrefix": "From Origin to",
     "titleWorld": "World.",
@@ -30,19 +30,19 @@
     "ctaSecondary": "Partner with us",
     "stats": [
       {
-        "value": "30",
-        "suffix": "yrs",
-        "label": "FAMILY EXPORT LEGACY"
-      },
-      {
-        "value": "7,800",
-        "suffix": "t",
-        "label": "EXPORTED LAST YEAR"
-      },
-      {
-        "value": "406",
+        "value": "Premium",
         "suffix": "",
-        "label": "CONTAINERS SHIPPED"
+        "label": "COFFEE QUALITY"
+      },
+      {
+        "value": "100",
+        "suffix": "%",
+        "label": "ETHIOPIAN ARABICA"
+      },
+      {
+        "value": "Global",
+        "suffix": "",
+        "label": "BUSINESS REACH"
       },
       {
         "value": "Top 20",
@@ -54,18 +54,18 @@
   },
   "story": {
     "eyebrow": "OUR STORY",
-    "title": "Two generations. One coffee legacy.",
-    "body1": "Birra Group General Trading PLC was established in 2004 by a team of young entrepreneurs from a coffee-farming family, with two generations of production behind them.",
-    "body2": "That family brings roughly 30 years as local suppliers and 15 years as exporters — deep-rooted knowledge of Ethiopian coffee, applied to international markets.",
-    "stat1Value": "2004",
-    "stat1Label": "ESTABLISHED",
-    "stat2Value": "15",
-    "stat2Suffix": "yrs",
-    "stat2Label": "EXPORTING",
+    "title": "Start small. Earn trust. Grow.",
+    "body1": "Birra Coffee General Trading PLC was established in 2010 by two young entrepreneurs with a vision to bring Ethiopia's finest products to global markets. Named after the Oromo word \"Birra,\" meaning spring, the company represents renewal, prosperity, and abundance.",
+    "body2": "Today, Birra is a diversified enterprise spanning coffee export, international trading, import services, coffee roasting, hospitality, and commercial real estate — driven by quality, integrity, and lasting partnerships.",
+    "stat1Value": "2010",
+    "stat1Label": "GROUP ESTABLISHED",
+    "stat2Value": "Multi-Sector",
+    "stat2Suffix": "",
+    "stat2Label": "BUSINESS OPERATIONS",
     "readMore": "Read our story",
-    "captionMain": "PHOTO — WASHING STATION, GEDEO",
-    "caption1": "PHOTO — RIPE CHERRY",
-    "caption2": "PHOTO — RAISED BEDS"
+    "captionMain": "BIRRA COFFEE PRODUCTS",
+    "caption1": "COFFEE CHERRY HARVEST",
+    "caption2": "ROASTED BIRRA COFFEE"
   },
   "origin": {
     "eyebrow": "ORIGIN & SOURCING",
@@ -82,16 +82,16 @@
         "id": "yirgacheffe",
         "name": "Yirgacheffe",
         "subtitle": "SOUTHERN ETHIOPIA",
-        "description": "A wet-processed coffee considered the best high-grown coffee in southern Ethiopia. Slow growth at altitude gives bright acidity, clean intense taste and complex floral aroma, sometimes with berry, wine or citrus undertones.",
+        "description": "World-famous for its exquisite floral aroma, often jasmine, with bright citrusy or lemony acidity and a delicate, tea-like body. Primarily washed, Yirgacheffe is one of the most sought-after coffees in the world.",
         "altitude": "1,700–2,200 m",
         "process": "Washed",
         "varieties": "Ethiopian heirloom",
         "harvest": "SHG / SHB",
         "profile": [
-          "Bright acidity",
           "Floral",
-          "Berry",
-          "Citrus"
+          "Citrus",
+          "Tea-like body",
+          "Bright acidity"
         ],
         "coord": {
           "x": 52,
@@ -102,16 +102,16 @@
         "id": "sidamo",
         "name": "Sidamo",
         "subtitle": "SOUTHERN ETHIOPIA",
-        "description": "Grown across high plateaus south of Yirgacheffe, Sidamo lots range from washed to sun-dried natural, giving a winey, complex cup with berry sweetness and a full body.",
+        "description": "Features a vibrant, complex profile with fruity and floral notes, bright acidity, and a balanced, medium body. Sidama offers both washed and natural processed beans, each with distinct character.",
         "altitude": "1,400–2,200 m",
         "process": "Washed / Natural",
         "varieties": "Ethiopian heirloom",
         "harvest": "SHG / SHB",
         "profile": [
-          "Winey",
-          "Berry",
-          "Citrus",
-          "Full body"
+          "Fruity",
+          "Floral",
+          "Bright acidity",
+          "Medium body"
         ],
         "coord": {
           "x": 49,
@@ -122,16 +122,16 @@
         "id": "guji",
         "name": "Guji",
         "subtitle": "SOUTHERN OROMIA",
-        "description": "A newer designation neighbouring Yirgacheffe and Sidamo, Guji lots are prized for their floral aroma, stone-fruit sweetness and delicate, tea-like body.",
+        "description": "Gaining global acclaim for its complex fruitiness — berry, stone fruit — along with floral notes, winey acidity, and deep sweetness. Often naturally processed, showcasing intense, layered flavors.",
         "altitude": "1,800–2,300 m",
-        "process": "Washed / Natural",
+        "process": "Natural / Washed",
         "varieties": "Ethiopian heirloom",
         "harvest": "SHG / SHB",
         "profile": [
-          "Floral",
+          "Berry",
           "Stone fruit",
-          "Tea-like",
-          "Sweet"
+          "Winey acidity",
+          "Deep sweetness"
         ],
         "coord": {
           "x": 58,
@@ -142,16 +142,16 @@
         "id": "harrar",
         "name": "Harrar",
         "subtitle": "EASTERN ETHIOPIA",
-        "description": "Grown on dry highland terraces east of Addis Ababa and traditionally sun-dried, Harrar delivers a wild, wine-like character with notes of blueberry and dark chocolate.",
+        "description": "Renowned for its complex, winey or fruity notes, often with a distinct blueberry undertone and full body. All Harar is dry-processed (natural), with medium to light acidity and typical mocha flavor with aftertaste.",
         "altitude": "1,500–2,100 m",
-        "process": "Natural",
+        "process": "Natural (dry-processed)",
         "varieties": "Ethiopian heirloom",
         "harvest": "Longberry / Shortberry",
         "profile": [
           "Winey",
           "Blueberry",
           "Mocha",
-          "Heavy body"
+          "Full body"
         ],
         "coord": {
           "x": 80,
@@ -162,16 +162,16 @@
         "id": "limmu",
         "name": "Limmu",
         "subtitle": "WESTERN ETHIOPIA",
-        "description": "Washed lots from the forested highlands of western Oromia, Limmu coffee is well balanced with winey acidity, spice notes and a clean, rounded finish.",
+        "description": "Typically wet-processed (washed), offering a clean cup with pronounced floral and spicy notes, balanced acidity, and medium body. Limu's acidity is medium to pointed with a medium to full body and distinctive winy character.",
         "altitude": "1,400–1,900 m",
         "process": "Washed",
         "varieties": "Ethiopian heirloom",
         "harvest": "SHG / SHB",
         "profile": [
-          "Balanced",
-          "Spice",
-          "Winey",
-          "Clean"
+          "Floral",
+          "Spicy",
+          "Winy",
+          "Medium body"
         ],
         "coord": {
           "x": 36,
@@ -182,16 +182,16 @@
         "id": "jimma",
         "name": "Jimma",
         "subtitle": "SOUTHWESTERN ETHIOPIA",
-        "description": "One of Ethiopia's largest producing zones, Jimma yields both washed and natural lots with a mild acidity, earthy body and approachable, everyday character.",
+        "description": "Known for its balanced profile, often featuring floral notes, good acidity, and a medium body. The cup is attractive with medium acidity and a good, pleasant mouth feel.",
         "altitude": "1,400–1,800 m",
         "process": "Washed / Natural",
         "varieties": "Ethiopian heirloom",
         "harvest": "SHG / SHB",
         "profile": [
-          "Earthy",
-          "Mild",
-          "Full body",
-          "Balanced"
+          "Balanced",
+          "Floral",
+          "Good acidity",
+          "Medium body"
         ],
         "coord": {
           "x": 38,
@@ -200,18 +200,18 @@
       },
       {
         "id": "nekemte",
-        "name": "Nekemte",
+        "name": "Lekempti",
         "subtitle": "WESTERN ETHIOPIA",
-        "description": "Grown in the Wollega zone, Nekemte lots are typically naturally processed, producing a fruit-forward, wine-like cup with notes of chocolate and dried fruit.",
+        "description": "Grayish in color with medium to pointed acidity and good mouth feel. Fruitiness is its unique character. Lekempti coffee from the Wollega zone is prized for its distinctive fruity profile.",
         "altitude": "1,500–2,100 m",
-        "process": "Natural",
+        "process": "Natural / Washed",
         "varieties": "Ethiopian heirloom",
         "harvest": "Longberry / Shortberry",
         "profile": [
-          "Fruit-forward",
-          "Winey",
-          "Chocolate",
-          "Dried fruit"
+          "Fruity",
+          "Good mouth feel",
+          "Medium acidity",
+          "Distinctive"
         ],
         "coord": {
           "x": 32,
@@ -275,39 +275,36 @@
     "items": [
       {
         "number": "01",
-        "title": "International grading standards",
-        "desc": "Globally recognised grading systems applied to every lot before it is offered."
+        "title": "International quality standards",
+        "desc": "Strict quality control based on accepted international standards is applied throughout coffee preparation and export."
       },
       {
         "number": "02",
-        "title": "Bean size & density",
-        "desc": "Screen size and density assessed as indicators of altitude, maturity and roast behaviour."
+        "title": "CERES Organic Certification",
+        "desc": "Birra's coffee operations include CERES Organic certification, supporting access to markets requiring recognised organic standards."
       },
       {
         "number": "03",
-        "title": "Moisture content",
-        "desc": "Moisture monitored through processing and verified before export preparation."
+        "title": "USDA Organic",
+        "desc": "USDA Organic certification supports access to the North American organic coffee market."
       },
       {
         "number": "04",
-        "title": "Professional cupping",
-        "desc": "Each lot inspected and cupped to verify flavour consistency and eliminate defects."
+        "title": "Advanced color sorting",
+        "desc": "Modern color-sorting technology is used to identify and remove defective beans and improve consistency in export-quality green coffee."
       },
       {
         "number": "05",
-        "title": "Export compliance",
-        "desc": "National and international export regulations followed for documentation, handling and trade practice."
+        "title": "Hand selection",
+        "desc": "Experienced hand pickers select coffee to meet required export-quality standards, complementing the company's modern processing equipment."
       },
       {
         "number": "06",
-        "title": "Traceability records",
-        "desc": "Clear records across the supply chain, from farming communities through processing centres."
+        "title": "Quality inspection",
+        "desc": "Coffee is inspected, graded, cleaned and quality controlled before export, with cupping used as part of coffee quality assessment."
       }
     ],
-    "footerNote": "Birra also follows the national and international export requirements covering documentation, handling and trade procedure for every shipment.",
-    "link": "Quality in detail",
-    "detailTitle": "Certifications and credentials",
-    "photoCaption": "PHOTO — CUPPING LAB, ADDIS ABABA"
+    "footerNote": "Birra also follows the national and international export requirements covering documentation, handling and trade procedure for every shipment."
   },
   "traceability": {
     "eyebrow": "LOT-LEVEL TRACEABILITY",
@@ -427,19 +424,19 @@
   "reach": {
     "eyebrow": "GLOBAL REACH",
     "title": "Local origin. Global reach.",
-    "subtitle": "Birra serves markets across the USA, Europe, the Middle East and Asia — more than 7,800 tons across 406 containers last year.",
+    "subtitle": "Birra exports premium Ethiopian Arabica to buyers across the Middle East, Europe, the Americas and Asia — from Ethiopia's highlands to your roastery.",
     "stats": [
       {
-        "value": "4 regions",
+        "value": "4 continents",
         "label": "MARKETS SERVED"
       },
       {
-        "value": "406",
-        "label": "CONTAINERS LAST YEAR"
+        "value": "7 regions",
+        "label": "COFFEE ORIGINS"
       },
       {
-        "value": "7,800+",
-        "label": "TONS LAST YEAR"
+        "value": "CERES · USDA",
+        "label": "ORGANIC CERTIFIED"
       },
       {
         "value": "Djibouti",
@@ -453,7 +450,44 @@
       "Harrar",
       "Limmu",
       "Jimma",
-      "Nekemte"
+      "Lekempti"
+    ]
+  },
+  "ourBusiness": {
+    "eyebrow": "OUR BUSINESS",
+    "title": "Six businesses, one enterprise",
+    "subtitle": "A diversified group built around Ethiopian coffee — from export to roastery, trading, processing, hospitality and real estate.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Coffee Export",
+        "desc": "Premium Ethiopian Arabica green coffee sourced from renowned origins including Yirgacheffe, Sidama, Guji, Harar, Limu, Jimma and Lekempti, serving international buyers across Europe, North America, the Middle East and Asia."
+      },
+      {
+        "number": "02",
+        "title": "Coffee Roastery",
+        "desc": "Roasted and ground Ethiopian coffee produced at Birra's roasting facilities in Dire Dawa and Sheger City, serving local and international markets."
+      },
+      {
+        "number": "03",
+        "title": "Import & Trading",
+        "desc": "International sourcing and distribution of construction materials, steel products, automobiles, machinery, office supplies, food items and other industrial and consumer goods."
+      },
+      {
+        "number": "04",
+        "title": "Quality & Processing",
+        "desc": "Modern coffee processing, cleaning and color sorting, supported by strict quality control and experienced hand selection to prepare export-quality coffee."
+      },
+      {
+        "number": "05",
+        "title": "Café & Hospitality",
+        "desc": "A modern café experience in Addis Ababa, bringing freshly roasted Ethiopian coffee, traditional coffee culture and hospitality together."
+      },
+      {
+        "number": "06",
+        "title": "Real Estate",
+        "desc": "Commercial property development and rental services, including offices, shops and commercial buildings in Addis Ababa and Dire Dawa."
+      }
     ]
   },
   "why": {
@@ -496,9 +530,11 @@
   },
   "partner": {
     "eyebrow": "PARTNER WITH BIRRA",
-    "title": "Tell us your grade, volume and port and our export desk will follow up.",
+    "title": "Looking for Ethiopian coffee or a trusted trading partner?",
+    "subtitle": "Tell us what you need and our team will help you find the right product, coffee origin or trading solution.",
     "emailCta": "contact@birra-group.com",
-    "aiCta": "Ask the AI assistant"
+    "contactCta": "Contact Birra",
+    "aiCta": "Ask the AI Assistant"
   },
   "aiChat": {
     "launcher": "Ask AI",
@@ -539,8 +575,8 @@
       },
       {
         "q": "What quality checks do you do?",
-        "a": "Every lot passes five checkpoints — at station, drying, hulling & grading, cupping and shipment prep — plus international grading standards and full traceability records.",
-        "keywords": ["quality", "certification", "certifications", "checks", "inspection", "cupping"]
+        "a": "Every lot is inspected, graded and cupped before export, with advanced color-sorting at our Dire Dawa and Sheger City facilities. Birra is CERES Organic (EU equivalent) and USDA Organic certified, and a member of the Ethiopian Coffee Exporters Association.",
+        "keywords": ["quality", "certification", "certifications", "checks", "inspection", "cupping", "organic"]
       },
       {
         "q": "How do I get a quote?",
@@ -549,14 +585,14 @@
       },
       {
         "q": "Tell me about Birra Group.",
-        "a": "Birra Group General Trading PLC was founded in 2004 in Addis Ababa. We're a two-generation coffee family that shipped 7,800+ tons across 406 containers last year — a top 20 Ethiopian exporter.",
+        "a": "Birra Group was founded in 2004 in Addis Ababa and has grown into a diversified Ethiopian enterprise spanning coffee export, roasting, imports, hospitality and real estate. Our coffee export arm, Birra Coffee General Trading PLC, has shipped premium Ethiopian Arabica since 2010 to markets across the Middle East, Europe, the Americas and Asia.",
         "keywords": ["about", "birra group", "company", "history", "founded"]
       }
     ]
   },
   "footer": {
-    "description": "Birra Group General Trading PLC. Established 2004 in Addis Ababa, with two generations of Ethiopian coffee behind it.",
-    "subLabel": "FROM SEED TO SHIPMENT",
+    "description": "Birra Group, established 2004 in Addis Ababa — a diversified Ethiopian enterprise rooted in premium coffee export, roasting and trade.",
+    "subLabel": "FROM ORIGIN TO CUP",
     "contactTitle": "CONTACT",
     "email": "contact@birra-group.com",
     "phone": "+251 915 012 599",
@@ -574,37 +610,40 @@
       "Gallery"
     ],
     "languageTitle": "LANGUAGE",
-    "rightsText": "Birra Group General Trading PLC. All rights reserved.",
+    "rightsText": "Birra Coffee General Trading PLC. All rights reserved.",
     "businessLines": [
-      "Birra Coffee"
+      "Coffee Export",
+      "Coffee Roastery",
+      "Import & Trading",
+      "Real Estate"
     ]
   },
   "exportPage": {
     "hero": {
       "eyebrow": "BIRRA COFFEE EXPORT",
       "title": "Green coffee, contracted and shipped",
-      "body": "The export desk handles everything between the washing station and your warehouse: sourcing, processing, grading, quality control, documentation and delivery out of Djibouti.",
+      "body": "Birra Coffee General Trading PLC specializes in supplying premium Ethiopian Arabica green coffee beans to importers, roasters, wholesalers, and specialty coffee buyers worldwide. From sourcing to delivery, we maintain rigorous quality assurance with strict quality control, traceability, and internationally recognized processing standards.",
       "ctaPrimary": "Get an instant quote",
       "ctaSecondary": "See live availability",
       "stats": [
-        { "value": "7,800+", "suffix": "t", "label": "EXPORTED LAST YEAR", "desc": "Shipped by Birra and its sister companies." },
-        { "value": "406", "suffix": "", "label": "CONTAINERS LAST YEAR", "desc": "Equivalent to the tonnage above." },
-        { "value": "4 regions", "suffix": "", "label": "MARKETS SERVED", "desc": "USA, Europe, the Middle East and Asia." },
-        { "value": "Top 20", "suffix": "", "label": "NATIONAL RANKING", "desc": "Among Ethiopia's coffee exporters." },
-        { "value": "15", "suffix": "yrs", "label": "EXPORT EXPERIENCE", "desc": "Serving international coffee markets." },
-        { "value": "Djibouti", "suffix": "", "label": "PRIMARY PORT", "desc": "Incoterms and lead times confirmed per contract." }
+        { "value": "2010", "suffix": "", "label": "EXPORTING SINCE", "desc": "Birra Coffee General Trading PLC." },
+        { "value": "7 origins", "suffix": "", "label": "ETHIOPIAN REGIONS", "desc": "Yirgacheffe, Sidama, Guji, Harar, Limu, Jimma and Lekempti." },
+        { "value": "4 markets", "suffix": "", "label": "MARKETS SERVED", "desc": "The Middle East, Europe, the Americas and Asia." },
+        { "value": "CERES · USDA", "suffix": "", "label": "ORGANIC CERTIFIED", "desc": "CERES (EU equivalent) and USDA Organic." },
+        { "value": "2 plants", "suffix": "", "label": "PROCESSING FACILITIES", "desc": "Dire Dawa and Sheger City, Oromia." },
+        { "value": "ECX & Direct", "suffix": "", "label": "SOURCING", "desc": "Direct from suppliers through vertical integration and via Ethiopia Commodity Exchange." }
       ]
     },
     "capacity": {
       "eyebrow": "PROCESSING & CAPACITY",
       "title": "Processing and capacity",
       "items": [
-        { "number": "01", "title": "Modern processing", "desc": "Advanced wet and dry processing facilities handling each batch through washing, drying, hulling, grading and sorting." },
-        { "number": "02", "title": "Quality control", "desc": "Cherries evaluated on arrival, processed under controlled conditions and monitored for moisture level and bean integrity." },
-        { "number": "03", "title": "Export capacity", "desc": "Scalable capacity for global demand, serving both large commercial orders and specialised boutique requests." },
-        { "number": "04", "title": "Skilled workforce", "desc": "Experienced professionals who treat processing as both a science and a craft, keeping shipments consistent." },
-        { "number": "05", "title": "Traceable supply chain", "desc": "Records maintained from farm through shipment, so origin and authenticity can be confirmed." },
-        { "number": "06", "title": "Continuous investment", "desc": "Ongoing investment in modern equipment, operational capability and the logistics network." }
+        { "number": "01", "title": "Advanced color sorting", "desc": "State-of-the-art color sorter machines meticulously process raw coffee beans, ensuring unparalleled consistency and eliminating defects." },
+        { "number": "02", "title": "Quality control", "desc": "Every lot undergoes comprehensive inspection, grading, cleaning, sorting, and quality control. Discerning hand pickers also hand pick the coffee for the required export standard." },
+        { "number": "03", "title": "Sourcing", "desc": "Coffee secured directly from suppliers through vertical integration as well as from Ethiopia Commodity Exchange (ECX), sourcing top quality coffee from reliable local suppliers." },
+        { "number": "04", "title": "Skilled workforce", "desc": "Well-organized and experienced management staff with high qualification and long years of experience in coffee marketing. 54 permanent and 250 seasonal workers." },
+        { "number": "05", "title": "Traceable supply chain", "desc": "Complete traceability from origin to destination, ensuring consistent quality and customer confidence in every container exported." },
+        { "number": "06", "title": "Processing facilities", "desc": "Strategically located processing plants in Dire Dawa and Sheger City, Oromia, equipped with cutting-edge technology for export-quality processing." }
       ]
     },
     "packing": {
@@ -630,39 +669,42 @@
         "Inspection documents",
         "Destination-specific paperwork"
       ],
-      "photoCaption": "PHOTO — CONTAINER STUFFING, ADDIS WAREHOUSE"
+      "photoCaption": "EXPORT WAREHOUSE"
     }
   },
   "aboutPage": {
     "hero": {
       "eyebrow": "ABOUT BIRRA GROUP",
-      "title": "Two generations. One coffee legacy.",
-      "body1": "Birra Group General Trading PLC was established in 2004 by a team of passionate and experienced young entrepreneurs. The owners come from a coffee-farming family with two generations as producers, roughly 30 years as local suppliers and 15 years as exporters.",
-      "body2": "Birra and its sister companies exported more than 7,800 tons across 406 containers last year, reaching a position among the top 20 coffee exporters in Ethiopia."
+      "title": "From local trade to a global coffee house.",
+      "body1": "Birra's story begins far from any boardroom — in a small town near Galamso, in Ethiopia's West Hararghe zone. In 2010, two young entrepreneurs with over a decade of local trading experience took their first step in business by buying and selling cattle. That early trade taught them what still defines Birra today: reading a market, building trust with suppliers, and moving goods reliably from producer to buyer.",
+      "body2": "As their network and capital grew, they turned to the commodity closest to the region's identity and Ethiopia's global reputation — coffee — founding Birra Coffee General Trading PLC as a licensed exporter. Named for the Oromo word for spring, the season of harvest, Birra grew step by step into a diversified trading house: exporting premium Arabica to Europe, North America, the Middle East and Asia; importing construction materials, steel, vehicles and machinery; roasting and serving coffee through its own café; and developing commercial real estate including Birra Mall in Dire Dawa and Birra Tower and Birra Plaza in Addis Ababa. Today, with processing facilities in Dire Dawa and Addis Ababa, Birra remains rooted in the same instincts that built it: start small, earn trust, and grow with integrity.",
+      "readMore": "Read more",
+      "readLess": "Read less"
     },
     "journey": {
       "eyebrow": "OUR JOURNEY",
       "title": "Milestones behind the business",
       "items": [
-        { "value": "2004", "label": "BIRRA GROUP ESTABLISHED", "desc": "Founded by a team of young entrepreneurs with deep roots in Ethiopian coffee." },
-        { "value": "Two generations", "label": "A FAMILY COFFEE LEGACY", "desc": "The founders come from a family of coffee producers with generations of experience." },
-        { "value": "30 years", "label": "FAMILY SUPPLY & EXPORT LEGACY", "desc": "Roughly three decades of experience in local coffee supply and production." },
-        { "value": "15 years", "label": "INTERNATIONAL EXPORT EXPERIENCE", "desc": "Around fifteen years serving international coffee markets." },
-        { "value": "7,800+ tons", "label": "COFFEE EXPORTED LAST YEAR", "desc": "Birra and its sister companies shipped more than 7,800 tons, equal to 406 containers." },
-        { "value": "Top 20", "label": "ETHIOPIAN COFFEE EXPORTER", "desc": "The group has reached a position among Ethiopia's top 20 coffee exporters." }
+        { "value": "2010", "label": "BIRRA COFFEE ESTABLISHED", "desc": "Near Galamso, the founders begin by trading cattle, then turn to coffee and found Birra Coffee General Trading PLC as a licensed exporter." },
+        { "value": "Diversified", "label": "GROUP EXPANSION", "desc": "Operations grow to span imports, coffee roasting and café, and commercial real estate." },
+        { "value": "CERES & USDA", "label": "ORGANIC CERTIFICATION", "desc": "Certified organic to EU-equivalent (CERES) and USDA standards for international markets." },
+        { "value": "2 facilities", "label": "MODERN PROCESSING PLANTS", "desc": "Advanced color-sorting facilities in Dire Dawa and Sheger City, Oromia." },
+        { "value": "15 years", "label": "COFFEE EXPORT EXPERIENCE", "desc": "Fifteen years serving international coffee markets, from origin to export documentation." },
+        { "value": "4 continents", "label": "GLOBAL EXPORT REACH", "desc": "Serving buyers across the Middle East, Europe, the Americas and Asia." }
       ]
     },
     "values": {
       "eyebrow": "CORE VALUES",
       "title": "How we do business",
       "items": [
-        { "title": "Integrity", "desc": "We conduct business with high ethical standards, transparency and honesty." },
-        { "title": "Partnership", "desc": "We build lasting relationships with clients, partners, farmers and communities." },
-        { "title": "Innovation", "desc": "We continuously seek better ways to meet evolving market needs." },
-        { "title": "Global vision", "desc": "We think globally while maintaining deep local knowledge and relationships." }
+        { "title": "Excellence", "desc": "Products and services that consistently exceed expectations." },
+        { "title": "Integrity", "desc": "Honesty, transparency and accountability in every transaction." },
+        { "title": "Quality", "desc": "Rigorous standards from sourcing through processing to delivery." },
+        { "title": "Sustainability", "desc": "Ethical sourcing and long-term prosperity for coffee communities." },
+        { "title": "Partnership", "desc": "Lasting relationships built on mutual respect and shared growth." }
       ],
-      "recognitionLabel": "RECOGNITION",
-      "badges": ["Best Exporter 2023", "Quality Excellence Award"]
+      "recognitionLabel": "CERTIFICATIONS & MEMBERSHIP",
+      "badges": ["CERES Organic (EU)", "USDA Organic", "Ethiopian Coffee Exporters Association"]
     },
     "sourcing": {
       "eyebrow": "RESPONSIBLE SOURCING",
@@ -673,12 +715,12 @@
         { "title": "Community development", "desc": "Supporting initiatives that contribute to the communities connected to the business." }
       ],
       "stats": [
-        { "label": "MARKETS SERVED", "value": "4 regions" },
-        { "label": "ESTABLISHED", "value": "2004" },
-        { "label": "EXPORTED LAST YEAR", "value": "7,800 t" },
-        { "label": "RANKING", "value": "Top 20" }
+        { "label": "MARKETS SERVED", "value": "4 continents" },
+        { "label": "GROUP ESTABLISHED", "value": "2004" },
+        { "label": "TEAM & SEASONAL STAFF", "value": "300+" },
+        { "label": "SOURCING", "value": "Direct & ECX" }
       ],
-      "photoCaption": "PHOTO — BIRRA TEAM, ADDIS ABABA"
+      "photoCaption": "BIRRA TEAM"
     },
     "businesses": {
       "eyebrow": "OUR COFFEE BUSINESSES",
