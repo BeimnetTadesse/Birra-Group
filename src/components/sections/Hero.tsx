@@ -70,7 +70,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[850px] lg:min-h-screen w-full items-stretch overflow-hidden bg-pine-950 pb-12 pt-32 sm:pb-16"
+      className="relative flex min-h-[650px] sm:min-h-[100dvh] w-full items-stretch overflow-hidden bg-pine-950 pb-12 pt-32 sm:pb-16"
     >
       <video
         className="absolute inset-0 h-full w-full object-cover"
@@ -134,7 +134,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
 
           <motion.div
             variants={item}
-            className="mt-14 border-t border-cream-100/10 pt-8 grid grid-cols-2 gap-y-8 gap-x-6 sm:grid-cols-4 w-full"
+            className="mt-12 border-t border-cream-100/10 pt-8 grid grid-cols-2 gap-y-8 gap-x-6 sm:grid-cols-4 w-full"
           >
             {dict.hero.stats.map((stat) => (
               <div key={stat.label} className="text-center flex flex-col items-center justify-between">

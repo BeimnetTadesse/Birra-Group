@@ -46,40 +46,40 @@ export default function Story({ dict, locale }: { dict: Dictionary; locale: Loca
         </AnimatedSection>
 
         <AnimatedSection delay={0.1} className="grid grid-cols-2 gap-3">
-          <div className="relative col-span-2 aspect-[4/3] overflow-hidden rounded-xl bg-cream-200">
+          <div className="group relative col-span-2 aspect-[4/3] overflow-hidden rounded-xl bg-cream-200">
             <Image
               src="/images/story/packaging.jpeg"
               alt="Birra Coffee products"
               fill
               sizes="(min-width: 1024px) 40vw, 90vw"
               loading="eager"
-              className="object-cover object-center"
+              className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-110"
             />
             <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
               {dict.story.captionMain}
             </span>
           </div>
-          <div className="relative aspect-square overflow-hidden rounded-xl bg-cream-200">
+          <div className="group relative aspect-square overflow-hidden rounded-xl bg-cream-200">
             <Image
               src="/images/story/cherry-hands.png"
               alt="Coffee cherry harvest"
               fill
               sizes="(min-width: 1024px) 20vw, 45vw"
               loading="eager"
-              className="object-cover"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
             />
             <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
               {dict.story.caption1}
             </span>
           </div>
-          <div className="relative aspect-square overflow-hidden rounded-xl bg-cream-200">
+          <div className="group relative aspect-square overflow-hidden rounded-xl bg-cream-200">
             <Image
               src="/images/story/roasted-coffee.jpg"
               alt="Roasted coffee beans in the roasting drum"
               fill
               sizes="(min-width: 1024px) 20vw, 45vw"
               loading="eager"
-              className="object-cover"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
             />
             <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
               {dict.story.caption2}

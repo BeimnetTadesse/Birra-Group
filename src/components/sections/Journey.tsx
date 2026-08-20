@@ -66,7 +66,7 @@ export default function Journey({ dict }: { dict: Dictionary }) {
         {dict.journey.stages.map((stage, i) => (
           <div
             key={stage.number}
-            className="w-[78vw] max-w-[300px] shrink-0 select-none overflow-hidden rounded-xl border border-ink-700/10 bg-white/60 transition-shadow duration-300 hover:border-gold-400/40 hover:shadow-[0_8px_30px_-6px_rgba(239,169,36,0.25)]"
+            className="group w-[78vw] max-w-[300px] shrink-0 select-none overflow-hidden rounded-xl border border-ink-700/10 bg-white/60 transition-shadow duration-300 hover:border-gold-400/40 hover:shadow-[0_8px_30px_-6px_rgba(239,169,36,0.25)]"
           >
             <div className="relative aspect-[4/3] bg-cream-200 overflow-hidden">
               <Image
@@ -75,7 +75,7 @@ export default function Journey({ dict }: { dict: Dictionary }) {
                 fill
                 sizes="300px"
                 loading="eager"
-                className="object-cover"
+                className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 style={{ objectPosition: stageImagePosition[i] ?? "50% 50%" }}
               />
             </div>

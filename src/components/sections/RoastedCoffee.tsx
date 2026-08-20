@@ -48,16 +48,16 @@ export default function RoastedCoffee({ dict }: { dict: Dictionary }) {
             <AnimatedSection
               key={ch.title}
               delay={i * 0.06}
-              className="overflow-hidden rounded-xl border border-ink-700/10 bg-white"
+              className="group overflow-hidden rounded-xl border border-ink-700/10 bg-white"
             >
-              <div className="relative aspect-square">
+              <div className="relative aspect-square overflow-hidden">
                 <Image
                   src={channelImages[i % channelImages.length]}
                   alt={ch.title}
                   fill
                   sizes="(min-width: 640px) 33vw, 90vw"
                   loading="eager"
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                 />
                 <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
                   {ch.photoCaption}

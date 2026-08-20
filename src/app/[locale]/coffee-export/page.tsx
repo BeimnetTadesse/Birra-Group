@@ -27,7 +27,7 @@ export default async function CoffeeExportPage({
 
   return (
     <>
-      <ExportHero dict={dict} locale={locale} />
+      <ExportHero dict={dict} />
       <ProcessingCapacity dict={dict} />
       <PackingDocumentation dict={dict} />
     </>

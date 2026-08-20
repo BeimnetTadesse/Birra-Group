@@ -39,14 +39,14 @@ export default function ResponsibleSourcing({ dict }: { dict: Dictionary }) {
               ))}
             </div>
 
-            <div className="relative mt-6 aspect-[16/10] overflow-hidden rounded-xl">
+            <div className="group relative mt-6 aspect-[16/10] overflow-hidden rounded-xl">
               <Image
                 src="/images/about-1.jpg"
                 alt={s.photoCaption}
                 fill
                 sizes="(min-width: 1024px) 40vw, 90vw"
                 loading="eager"
-                className="object-cover"
+                className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
               />
               <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
                 {s.photoCaption}

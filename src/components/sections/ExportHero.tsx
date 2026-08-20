@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import type { Dictionary } from "@/i18n/getDictionary";
-import type { Locale } from "@/i18n/config";
 import Container from "@/components/ui/Container";
 
 const container = {
@@ -15,13 +14,7 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
 };
 
-export default function ExportHero({
-  dict,
-  locale,
-}: {
-  dict: Dictionary;
-  locale: Locale;
-}) {
+export default function ExportHero({ dict }: { dict: Dictionary }) {
   const h = dict.exportPage.hero;
 
   return (
@@ -47,21 +40,6 @@ export default function ExportHero({
             <motion.p variants={item} className="mt-6 max-w-2xl text-base sm:text-lg text-cream-100/80">
               {h.body}
             </motion.p>
-
-            <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">
-              <a
-                href={`/${locale}#quote`}
-                className="rounded-full bg-gold-400 px-7 py-3 text-sm font-medium tracking-wide text-pine-950 transition-transform hover:scale-105 hover:bg-gold-300"
-              >
-                {h.ctaPrimary}
-              </a>
-              <a
-                href={`/${locale}#availability`}
-                className="rounded-full border border-cream-100/30 px-7 py-3 text-sm tracking-wide text-cream-100 transition-colors hover:border-cream-100"
-              >
-                {h.ctaSecondary}
-              </a>
-            </motion.div>
           </div>
 
           <motion.div

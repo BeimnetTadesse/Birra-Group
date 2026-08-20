@@ -9,13 +9,13 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import Marquee from "@/components/ui/Marquee";
 
-const ETHIOPIA = { x: 59, y: 40 };
+const ETHIOPIA = { x: 59.2, y: 45.9 };
 
 const DESTINATIONS = [
   { x: 30, y: 26, label: "United States" },
   { x: 28, y: 19, label: "Canada" },
   { x: 74, y: 30, label: "China" },
-  { x: 85, y: 21, label: "Japan" },
+  { x: 85, y: 21, label: "Japan", labelPos: { x: 75, y: 41 } },
   { x: 84, y: 26, label: "South Korea" },
 ];
 
@@ -129,20 +129,23 @@ export default function GlobalReach({ dict }: { dict: Dictionary }) {
             ))}
 
             {/* Country name labels — always visible */}
-            {DESTINATIONS.map((d) => (
-              <text
-                key={d.label}
-                x={d.x}
-                y={d.y - 1.5}
-                fill="#f7f2e6"
-                opacity="0.85"
-                fontSize="1.6"
-                textAnchor="middle"
-                fontFamily="monospace"
-              >
-                {d.label}
-              </text>
-            ))}
+            {DESTINATIONS.map((d) => {
+              const labelPos = d.labelPos ?? { x: d.x, y: d.y - 1.5 };
+              return (
+                <text
+                  key={d.label}
+                  x={labelPos.x}
+                  y={labelPos.y}
+                  fill="#f7f2e6"
+                  opacity="0.85"
+                  fontSize="1.6"
+                  textAnchor="middle"
+                  fontFamily="monospace"
+                >
+                  {d.label}
+                </text>
+              );
+            })}
 
             {/* Region labels — smaller */}
             {REGION_LABELS.map((r) => (
