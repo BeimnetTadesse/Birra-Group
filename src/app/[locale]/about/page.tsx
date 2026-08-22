@@ -4,9 +4,7 @@ import { getDictionary } from "@/i18n/getDictionary";
 import AboutHero from "@/components/sections/AboutHero";
 import Milestones from "@/components/sections/Milestones";
 import CoreValues from "@/components/sections/CoreValues";
-import Quality from "@/components/sections/Quality";
 import ResponsibleSourcing from "@/components/sections/ResponsibleSourcing";
-import CoffeeBusinesses from "@/components/sections/CoffeeBusinesses";
 
 export async function generateMetadata({
   params,
@@ -33,9 +31,7 @@ export default async function AboutPage({
       <AboutHero dict={dict} />
       <Milestones dict={dict} />
       <CoreValues dict={dict} />
-      <Quality dict={dict} />
       <ResponsibleSourcing dict={dict} />
-      <CoffeeBusinesses dict={dict} locale={locale} />
     </>
   );
 }

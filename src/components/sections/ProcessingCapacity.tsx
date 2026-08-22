@@ -7,7 +7,7 @@ export default function ProcessingCapacity({ dict }: { dict: Dictionary }) {
   const c = dict.exportPage.capacity;
 
   return (
-    <section className="relative bg-cream-50 py-24 sm:py-32">
+    <section id="quality" className="relative bg-cream-50 py-24 sm:py-32">
       <Container>
         <AnimatedSection>
           <Eyebrow>{c.eyebrow}</Eyebrow>
