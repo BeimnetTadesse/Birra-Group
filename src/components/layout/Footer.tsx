@@ -61,8 +61,8 @@ export default function Footer({
                 `/${locale}/coffee-export`,
                 `/${locale}/roastery`,
                 `/${locale}/about`,
-                `/${locale}/about#quality`,
-                `/${locale}/news`,
+                `/${locale}/coffee-export#quality`,
+                `/${locale}/insights`,
                 `/${locale}/gallery`,
               ];
               return (

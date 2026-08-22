@@ -8,10 +8,10 @@
     "about": "About",
     "coffeeExport": "Coffee Export",
     "roastery": "Roastery",
-    "news": "News",
     "gallery": "Gallery",
     "contact": "Contact",
-    "instantQuote": "Instant Quote"
+    "instantQuote": "Explore Origins",
+    "insights": "Insights"
   },
   "marquee": [
     "PREMIUM ETHIOPIAN ARABICA",
@@ -267,44 +267,6 @@
         "desc": "Containerized and shipped from the port of Djibouti to markets across the world."
       }
     ]
-  },
-  "quality": {
-    "eyebrow": "QUALITY & TRUST",
-    "title": "Every lot inspected and cupped before it ships",
-    "intro": "Quality is maintained across the chain, from harvest and processing through to export preparation, using recognised grading and inspection practice.",
-    "items": [
-      {
-        "number": "01",
-        "title": "International quality standards",
-        "desc": "Strict quality control based on accepted international standards is applied throughout coffee preparation and export."
-      },
-      {
-        "number": "02",
-        "title": "CERES Organic Certification",
-        "desc": "Birra's coffee operations include CERES Organic certification, supporting access to markets requiring recognised organic standards."
-      },
-      {
-        "number": "03",
-        "title": "USDA Organic",
-        "desc": "USDA Organic certification supports access to the North American organic coffee market."
-      },
-      {
-        "number": "04",
-        "title": "Advanced color sorting",
-        "desc": "Modern color-sorting technology is used to identify and remove defective beans and improve consistency in export-quality green coffee."
-      },
-      {
-        "number": "05",
-        "title": "Hand selection",
-        "desc": "Experienced hand pickers select coffee to meet required export-quality standards, complementing the company's modern processing equipment."
-      },
-      {
-        "number": "06",
-        "title": "Quality inspection",
-        "desc": "Coffee is inspected, graded, cleaned and quality controlled before export, with cupping used as part of coffee quality assessment."
-      }
-    ],
-    "footerNote": "Birra also follows the national and international export requirements covering documentation, handling and trade procedure for every shipment."
   },
   "traceability": {
     "eyebrow": "LOT-LEVEL TRACEABILITY",
@@ -602,7 +564,7 @@
       "Coffee Roastery",
       "About Birra Group",
       "Quality",
-      "News",
+      "Insights",
       "Gallery"
     ],
     "languageTitle": "LANGUAGE",
@@ -621,12 +583,6 @@
       "body": "Birra Coffee General Trading PLC specializes in supplying premium Ethiopian Arabica green coffee beans to importers, roasters, wholesalers, and specialty coffee buyers worldwide. From sourcing to delivery, we maintain rigorous quality assurance with strict quality control, traceability, and internationally recognized processing standards.",
       "stats": [
         {
-          "value": "2010",
-          "suffix": "",
-          "label": "EXPORTING SINCE",
-          "desc": "Birra Coffee General Trading PLC."
-        },
-        {
           "value": "7 origins",
           "suffix": "",
           "label": "ETHIOPIAN REGIONS",
@@ -642,7 +598,7 @@
           "value": "CERES · USDA",
           "suffix": "",
           "label": "ORGANIC CERTIFIED",
-          "desc": "CERES (EU equivalent) and USDA Organic."
+          "desc": "CERES (EU equivalent) and USDA Organic — supporting access to European and North American organic markets."
         },
         {
           "value": "2 plants",
@@ -655,6 +611,12 @@
           "suffix": "",
           "label": "SOURCING",
           "desc": "Direct from suppliers through vertical integration and via Ethiopia Commodity Exchange."
+        },
+        {
+          "value": "Member",
+          "suffix": "",
+          "label": "INDUSTRY MEMBERSHIP",
+          "desc": "Ethiopian Coffee Exporters Association — the national trade body for Ethiopia's coffee export industry."
         }
       ]
     },
@@ -760,24 +722,9 @@
           "desc": "Operations grow to span imports, coffee roasting and café, and commercial real estate."
         },
         {
-          "value": "CERES & USDA",
-          "label": "ORGANIC CERTIFICATION",
-          "desc": "Certified organic to EU-equivalent (CERES) and USDA standards for international markets."
-        },
-        {
-          "value": "2 facilities",
-          "label": "MODERN PROCESSING PLANTS",
-          "desc": "Advanced color-sorting facilities in Dire Dawa and Sheger City, Oromia."
-        },
-        {
           "value": "15 years",
           "label": "COFFEE EXPORT EXPERIENCE",
           "desc": "Fifteen years serving international coffee markets, from origin to export documentation."
-        },
-        {
-          "value": "4 continents",
-          "label": "GLOBAL EXPORT REACH",
-          "desc": "Serving buyers across the Middle East, Europe, the Americas and Asia."
         }
       ]
     },
@@ -806,10 +753,8 @@
           "desc": "Lasting relationships built on mutual respect and shared growth."
         }
       ],
-      "recognitionLabel": "CERTIFICATIONS & MEMBERSHIP",
+      "recognitionLabel": "INDUSTRY MEMBERSHIP",
       "badges": [
-        "CERES Organic (EU)",
-        "USDA Organic",
         "Ethiopian Coffee Exporters Association"
       ]
     },
@@ -832,20 +777,12 @@
       ],
       "stats": [
         {
-          "label": "MARKETS SERVED",
-          "value": "4 continents"
-        },
-        {
           "label": "GROUP ESTABLISHED",
           "value": "2010"
         },
         {
-          "label": "TEAM & SEASONAL STAFF",
-          "value": "300+"
-        },
-        {
-          "label": "SOURCING",
-          "value": "Direct & ECX"
+          "label": "HEADQUARTERS",
+          "value": "Addis Ababa"
         }
       ],
       "photoCaption": "BIRRA TEAM"
@@ -1061,44 +998,221 @@
       "Export Warehouse"
     ]
   },
-  "newsPage": {
-    "eyebrow": "NEWS & UPDATES",
-    "title": "From the group",
-    "body": "Harvest updates, shipment news and announcements from across Birra Group. Slots below are ready for real articles — send the copy and images and they drop straight in.",
-    "photoCaption": "PHOTO — ARTICLE IMAGE",
-    "slotDesc": "Slot — headline, date and a short summary",
-    "articles": [
-      {
-        "category": "COFFEE EXPORT",
-        "title": "Export update"
-      },
-      {
-        "category": "ORIGINS",
-        "title": "From the growing regions"
-      },
-      {
-        "category": "ROASTERY",
-        "title": "Roasted coffee news"
-      }
-    ],
-    "more": {
-      "eyebrow": "MORE FROM THE GROUP",
-      "title": "Across coffee export and the roastery",
-      "link": "Coffee export",
-      "items": [
+  "market": {
+    "eyebrow": "LIVE COFFEE MARKET",
+    "perLb": "/ lb",
+    "today": "today",
+    "subtitle": "International Arabica market reference",
+    "disclaimer": "An international reference price for Arabica, not a Birra offer. Ethiopian lots price above or below it by origin, grade, processing and volume.",
+    "cta": "Request a quotation",
+    "indicative": "Indicative · updated hourly",
+    "rangeLabel": "30-DAY RANGE",
+    "prevCloseLabel": "PREVIOUS CLOSE",
+    "highLabel": "30-DAY HIGH",
+    "lowLabel": "30-DAY LOW",
+    "contractLabel": "REFERENCE",
+    "sourceLabel": "Source",
+    "updated": "Updated",
+    "contractValue": "Global Arabica Market"
+  },
+  "insightsPage": {
+    "hero": {
+      "eyebrow": "INSIGHTS",
+      "title": "Coffee is more than a commodity. It's an industry, a culture, and a global market.",
+      "body": "Explore the markets, origins, people and trade shaping Ethiopian coffee — from the highlands of Ethiopia to buyers around the world."
+    },
+    "featured": {
+      "eyebrow": "FEATURED",
+      "title": "Ethiopian Coffee: From Highland Origins to Global Markets",
+      "body": "Discover how altitude, climate, processing and origin shape the character and value of Ethiopian coffee.",
+      "cta": "Explore the story",
+      "photoCaption": "PHOTO — ETHIOPIAN HIGHLANDS"
+    },
+    "coffeeMarket": {
+      "eyebrow": "COFFEE MARKET",
+      "title": "Understanding the market that sets the benchmark",
+      "ctaLabel": "View all market insights",
+      "cards": [
         {
-          "label": "GROUP",
-          "title": "Group announcement"
+          "title": "Understanding the Arabica Market",
+          "body": "What global Arabica benchmarks mean, and how they relate to the physical coffee that leaves Ethiopian mills."
         },
         {
-          "label": "QUALITY",
-          "title": "Quality and compliance"
+          "title": "What Moves Coffee Prices?",
+          "body": "Supply, demand, weather and global consumption — the forces behind every move in the benchmark."
         },
         {
-          "label": "EVENTS",
-          "title": "Trade events"
+          "title": "Reading the Coffee Market",
+          "body": "A short, practical guide for buyers on interpreting market movements and benchmark pricing."
         }
       ]
+    },
+    "ethiopianCoffee": {
+      "eyebrow": "ETHIOPIAN COFFEE",
+      "title": "Origins, regions and what makes Ethiopian coffee distinct",
+      "cards": [
+        {
+          "title": "The Origins Behind Ethiopian Coffee",
+          "body": "Ethiopia is the birthplace of Arabica — the origins and traditions that still shape how it's grown today."
+        },
+        {
+          "title": "Guji, Yirgacheffe & Sidama: Understanding Ethiopia's Coffee Regions",
+          "body": "How altitude, soil and microclimate give each growing region its own distinct cup profile."
+        },
+        {
+          "title": "Why Ethiopian Specialty Coffee Commands a Premium",
+          "body": "Grade, processing and traceability — the factors that set specialty lots apart in the global market."
+        }
+      ]
+    },
+    "globalIndustry": {
+      "eyebrow": "GLOBAL COFFEE INDUSTRY",
+      "title": "The bigger picture beyond Ethiopia",
+      "cards": [
+        {
+          "title": "Where the World's Coffee Comes From",
+          "body": "A look at the producing regions that supply the global coffee trade."
+        },
+        {
+          "title": "Climate, Production & the Future of Coffee",
+          "body": "How shifting growing conditions are reshaping where — and how — coffee can be produced."
+        },
+        {
+          "title": "How Global Demand Shapes Coffee Trade",
+          "body": "Consumption trends across major markets, and their effect on sourcing and trade flows."
+        }
+      ]
+    },
+    "exportTrade": {
+      "eyebrow": "EXPORT & TRADE",
+      "title": "What international buyers need to know",
+      "ctaLabel": "Explore Coffee Export",
+      "cards": [
+        {
+          "title": "From Farm to Port: The Journey of Ethiopian Coffee",
+          "body": "The path a lot takes from highland farm to export-ready shipment."
+        },
+        {
+          "title": "Understanding Coffee Grades & Processing",
+          "body": "How grading and processing method affect quality, cup profile and value."
+        },
+        {
+          "title": "What International Buyers Should Know About Ethiopian Coffee",
+          "body": "Documentation, sourcing and working with an Ethiopian export partner."
+        }
+      ]
+    },
+    "journal": {
+      "eyebrow": "BIRRA JOURNAL",
+      "title": "News and announcements from Birra Group",
+      "body": "Export milestones, new partnerships, certifications and updates from across the group. Slots below are ready for real articles — send the copy and images and they drop straight in.",
+      "photoCaption": "PHOTO — ARTICLE IMAGE",
+      "slotDesc": "Slot — headline, date and a short summary",
+      "articles": [
+        {
+          "category": "EXPORT MILESTONE",
+          "title": "Export milestone"
+        },
+        {
+          "category": "PARTNERSHIP",
+          "title": "New partnership"
+        },
+        {
+          "category": "CERTIFICATION",
+          "title": "Certification update"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Looking for Ethiopian coffee?",
+      "body": "Talk to our export team about origins, grades, processing and volume.",
+      "cta": "Request a quotation"
+    },
+    "roastery": {
+      "eyebrow": "COFFEE ROASTERY",
+      "title": "From green bean to roasted cup",
+      "ctaLabel": "Explore the Roastery",
+      "cards": [
+        {
+          "title": "From Green Bean to Roasted Cup",
+          "body": "How Birra's roastery transforms green Ethiopian coffee into a finished, ready-to-brew product."
+        },
+        {
+          "title": "Understanding Roast Profiles",
+          "body": "How roast level and control through the roast shape aroma, body and flavour in the cup."
+        },
+        {
+          "title": "Roasting for Local & Global Markets",
+          "body": "Freshly roasted coffee, packed for both Ethiopian buyers and international export."
+        }
+      ]
+    },
+    "article": {
+      "eyebrow": "FEATURED",
+      "title": "Ethiopian Coffee: From Highland Origins to Global Markets",
+      "dek": "Discover how altitude, climate, processing and origin shape the character and value of Ethiopian coffee.",
+      "heroPhotoCaption": "ETHIOPIAN HIGHLAND COFFEE FARM",
+      "backLabel": "Insights",
+      "readTimeSuffix": "min read",
+      "sections": [
+        {
+          "eyebrow": "ORIGIN",
+          "title": "The Birthplace of Coffee",
+          "body": "Coffee's story begins in Ethiopia. According to a widely told legend, a goatherd named Kaldi in the Kaffa region noticed his goats grew unusually energetic after eating the red cherries of a wild shrub — and coffee's journey into human hands began. Whatever the truth behind the story, the botany isn't in dispute: Ethiopia is the genetic home of Coffea arabica, and wild arabica trees still grow in the country's highland forests today. From here, coffee travelled north to Yemen — where the port of Mocha lent its name to the trade — and from there out into the world."
+        },
+        {
+          "eyebrow": "TERROIR",
+          "title": "Altitude, Climate and Soil",
+          "body": "Ethiopia's specialty coffee grows at elevations from roughly 1,400 up to 2,300 metres above sea level, in the cool, equatorial highlands that ring the Great Rift Valley. At altitude, cherries ripen more slowly, giving the bean more time to develop sugars and acidity — a major reason Ethiopian coffee is prized for its complexity. Volcanic, mineral-rich soil and a distinct wet and dry season add to the picture, giving each growing region its own microclimate and, in turn, its own character in the cup.",
+          "quote": "Altitude isn't a marketing detail — it's why a lot grown at 2,200 metres and one grown at 1,400 can taste nothing alike."
+        }
+      ],
+      "regions": {
+        "eyebrow": "ORIGINS",
+        "title": "Ethiopia's Coffee Regions",
+        "body": "Ethiopia's coffee is grown across a handful of distinct regions, each shaped by its own altitude, soil and microclimate. Yirgacheffe and Sidamo are known for floral, citrus-bright cups; Guji for complex, layered fruit; Harrar — one of the country's oldest coffee-growing areas, traditionally dry-processed — for its heavy body and winey, berry-like character. Further west, Limmu, Jimma and Lekempti round out a coffee geography as varied as the country itself."
+      },
+      "processing": {
+        "eyebrow": "PROCESSING",
+        "title": "Washed, Natural and Honey",
+        "body": "How a cherry is processed after harvest shapes the cup as much as where it was grown. Washed processing removes the fruit before drying, producing a clean, bright cup with pronounced acidity. Natural processing dries the whole cherry around the bean, imparting a heavier body and fruit-forward, sometimes wine-like sweetness. Honey processing sits between the two — some of the fruit's mucilage is left on the bean during drying — giving a cup with more body than washed coffee and more clarity than natural.",
+        "methods": [
+          {
+            "name": "Washed",
+            "desc": "Fruit removed before drying. Clean cup, pronounced acidity."
+          },
+          {
+            "name": "Natural",
+            "desc": "Whole cherry dried around the bean. Heavier body, fruit-forward."
+          },
+          {
+            "name": "Honey",
+            "desc": "Partial mucilage left on during drying. Body between the two."
+          }
+        ]
+      },
+      "sections2": [
+        {
+          "eyebrow": "FLAVOR",
+          "title": "How Origin Shapes Flavor",
+          "body": "Altitude, soil, varietal and processing method don't act alone — together they form what coffee people call terroir, the same idea that shapes a wine's character. A Yirgacheffe cherry grown at altitude and washed will taste nothing like a Harrar cherry dried in the sun, even though both are unmistakably Ethiopian. It's this range — one country producing cups as different as a delicate, floral Yirgacheffe and a bold, fruit-driven Harrar — that makes Ethiopian coffee unique among origins."
+        },
+        {
+          "eyebrow": "SUPPLY CHAIN",
+          "title": "From Farm to Global Market",
+          "body": "The vast majority of Ethiopian coffee is grown by smallholder farmers, many working plots of a hectare or less, often alongside other crops in the shade of native trees. Cherries are delivered to local washing or processing stations, then move through milling, grading and quality inspection before they're ready for export. Much of this coffee changes hands through the Ethiopia Commodity Exchange (ECX), which brings transparency and standardised grading to the market; the rest moves through direct relationships between exporters and producers or cooperatives."
+        }
+      ],
+      "birra": {
+        "eyebrow": "BIRRA",
+        "title": "Birra's Role in Sourcing and Export",
+        "body": "Birra Coffee General Trading PLC has operated as a licensed Ethiopian coffee exporter since 2010, sourcing from seven origins — Yirgacheffe, Sidama, Guji, Harar, Limu, Jimma and Lekempti — through both the Ethiopia Commodity Exchange and direct supplier relationships. Green coffee is processed at Birra's own facilities in Dire Dawa and Sheger City, Oromia, using advanced color-sorting technology alongside experienced hand-selection, and is certified to CERES (EU-equivalent) and USDA Organic standards. From there, it ships to buyers across the Middle East, Europe, the Americas and Asia.",
+        "exportCta": "Explore Coffee Export",
+        "contactCta": "Talk to our export team"
+      },
+      "byline": "Birra Group",
+      "category": "Origins",
+      "tocLabel": "In this article"
     }
   }
 }
