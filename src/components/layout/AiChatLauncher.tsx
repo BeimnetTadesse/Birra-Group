@@ -3,16 +3,38 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { Dictionary } from "@/i18n/getDictionary";
+import type { Locale } from "@/i18n/config";
 
 type Message = { role: "bot" | "user"; text: string };
 
-export default function AiChatLauncher({ dict }: { dict: Dictionary }) {
+export default function AiChatLauncher({
+  dict,
+  locale,
+}: {
+  dict: Dictionary;
+  locale: Locale;
+}) {
   const ai = dict.aiChat;
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([{ role: "bot", text: ai.greeting }]);
   const [input, setInput] = useState("");
   const [typing, setTyping] = useState(false);
+  const [tastes, setTastes] = useState<string[]>([]);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  function toggleTaste(note: string) {
+    setTastes((current) =>
+      current.includes(note) ? current.filter((n) => n !== note) : [...current, note],
+    );
+  }
+
+  function askForRecommendation() {
+    if (tastes.length === 0 || typing) return;
+    // Ask in natural language so the model answers from the knowledge base
+    // rather than us hard-coding a flavour → origin lookup here.
+    ask(ai.tastePrompt.replace("{tastes}", tastes.join(", ")));
+    setTastes([]);
+  }
 
   useEffect(() => {
     const handler = () => setOpen(true);
@@ -24,25 +46,61 @@ export default function AiChatLauncher({ dict }: { dict: Dictionary }) {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
   }, [messages, typing]);
 
-  function answerFor(text: string) {
-    const q = text.toLowerCase();
-    const match = ai.questions.find(
-      (item) => q.includes(item.q.toLowerCase()) || item.keywords.some((k) => q.includes(k.toLowerCase()))
-    );
-    return match?.a ?? ai.fallback;
-  }
-
-  function ask(text: string) {
+  async function ask(text: string) {
     const trimmed = text.trim();
     if (!trimmed || typing) return;
-    const reply = answerFor(trimmed);
+
+    // Snapshot the history the model should see. Taken before the optimistic
+    // update so the user's new turn isn't counted twice.
+    const history = messages
+      .slice(1) // drop the canned greeting — it isn't part of the conversation
+      .map((m) => ({ role: m.role === "bot" ? ("assistant" as const) : ("user" as const), content: m.text }));
+
     setMessages((m) => [...m, { role: "user", text: trimmed }]);
     setInput("");
     setTyping(true);
-    setTimeout(() => {
+
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          locale,
+          messages: [...history, { role: "user", content: trimmed }],
+        }),
+      });
+
+      if (!response.ok || !response.body) {
+        const data = await response.json().catch(() => null);
+        setTyping(false);
+        setMessages((m) => [...m, { role: "bot", text: data?.error ?? ai.fallback }]);
+        return;
+      }
+
+      // Open an empty bubble, then append each chunk to it as it arrives.
       setTyping(false);
-      setMessages((m) => [...m, { role: "bot", text: reply }]);
-    }, 550);
+      setMessages((m) => [...m, { role: "bot", text: "" }]);
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        const chunk = decoder.decode(value, { stream: true });
+        setMessages((m) => {
+          const next = [...m];
+          next[next.length - 1] = {
+            role: "bot",
+            text: next[next.length - 1]!.text + chunk,
+          };
+          return next;
+        });
+      }
+    } catch {
+      setTyping(false);
+      setMessages((m) => [...m, { role: "bot", text: ai.fallback }]);
+    }
   }
 
   return (
@@ -69,9 +127,6 @@ export default function AiChatLauncher({ dict }: { dict: Dictionary }) {
             </div>
 
             <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto px-5 py-4">
-              <p className="font-mono text-[9px] tracking-[0.15em] text-cream-100/30">
-                {ai.demoNote}
-              </p>
               {messages.map((m, i) => (
                 <div
                   key={i}
@@ -93,19 +148,59 @@ export default function AiChatLauncher({ dict }: { dict: Dictionary }) {
               )}
             </div>
 
-            <div className="border-t border-cream-100/10 px-5 pb-2 pt-3">
+            <div className="border-t border-cream-100/10 px-5 pb-3 pt-3">
               <span className="font-mono text-[9px] tracking-[0.2em] text-cream-100/30">
+                {ai.tasteLabel}
+              </span>
+
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {ai.tasteOptions.map((note) => {
+                  const picked = tastes.includes(note);
+                  return (
+                    <button
+                      key={note}
+                      onClick={() => toggleTaste(note)}
+                      disabled={typing}
+                      aria-pressed={picked}
+                      className={`rounded-full border px-3 py-1.5 text-xs transition-colors disabled:opacity-50 ${
+                        picked
+                          ? "border-gold-400 bg-gold-400 text-pine-950"
+                          : "border-cream-100/15 text-cream-100/70 hover:border-gold-400/50 hover:text-gold-400"
+                      }`}
+                    >
+                      {note}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <AnimatePresence>
+                {tastes.length > 0 && (
+                  <motion.button
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    onClick={askForRecommendation}
+                    disabled={typing}
+                    className="mt-2.5 w-full overflow-hidden rounded-full bg-gold-400 py-2 text-xs font-medium tracking-wide text-pine-950 transition-colors hover:bg-gold-300 disabled:opacity-50"
+                  >
+                    {ai.tasteCta} ({tastes.length})
+                  </motion.button>
+                )}
+              </AnimatePresence>
+
+              <span className="mt-4 block font-mono text-[9px] tracking-[0.2em] text-cream-100/30">
                 {ai.quickLabel}
               </span>
               <div className="scroll-drag mt-2 flex gap-1.5 overflow-x-auto pb-1">
-                {ai.questions.map((item) => (
+                {ai.quickQuestions.map((item) => (
                   <button
-                    key={item.q}
-                    onClick={() => ask(item.q)}
+                    key={item.label}
+                    onClick={() => ask(item.prompt)}
                     disabled={typing}
                     className="shrink-0 whitespace-nowrap rounded-full border border-cream-100/15 px-3 py-1.5 text-xs text-cream-100/70 transition-colors hover:border-gold-400/50 hover:text-gold-400 disabled:opacity-50"
                   >
-                    {item.q}
+                    {item.label}
                   </button>
                 ))}
               </div>

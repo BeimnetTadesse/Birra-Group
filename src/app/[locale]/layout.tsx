@@ -52,7 +52,7 @@ export default async function LocaleLayout({
         <Header locale={locale} dict={dict} />
         <main>{children}</main>
         <Footer locale={locale} dict={dict} />
-        <AiChatLauncher dict={dict} />
+        <AiChatLauncher dict={dict} locale={locale} />
       </body>
     </html>
   );
