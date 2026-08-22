@@ -8,6 +8,10 @@ import { clientIp, rateLimit } from "@/lib/rate-limit";
 // Touches the database on every call, so it must never be statically rendered.
 export const dynamic = "force-dynamic";
 
+// A cold database connection plus the outbound email call can exceed Vercel's
+// 10s default. 20s is ample and still fails fast if something is genuinely stuck.
+export const maxDuration = 20;
+
 const LIMIT = { limit: 5, windowMs: 10 * 60 * 1000 }; // 5 per IP per 10 minutes
 
 export async function POST(request: Request) {

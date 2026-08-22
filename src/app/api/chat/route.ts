@@ -6,6 +6,11 @@ import { clientIp, rateLimit } from "@/lib/rate-limit";
 
 export const dynamic = "force-dynamic";
 
+// Vercel kills a serverless function at 10s by default, which would truncate a
+// slow reply mid-sentence. Typical responses are 3–6s; this leaves headroom for
+// the occasional slow one without letting a hung request run indefinitely.
+export const maxDuration = 30;
+
 // Chat costs a request quota per message, so the cap is tighter than the
 // contact form's. Google's free tier also has its own per-minute limit.
 const LIMIT = { limit: 20, windowMs: 10 * 60 * 1000 }; // 20 messages per IP per 10 min
