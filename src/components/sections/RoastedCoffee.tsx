@@ -5,11 +5,6 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 const barColors = ["#f3c66b", "#e0940f", "#c9820c", "#b8760c", "#8a5b09", "#6b4607"];
-const channelImages = [
-  "/images/roastery/channel-export.png",
-  "/images/roastery/channel-wholesale.png",
-  "/images/roastery/channel-retail.png",
-];
 
 export default function RoastedCoffee({ dict }: { dict: Dictionary }) {
   const r = dict.roasteryPage.roasted;
@@ -24,7 +19,24 @@ export default function RoastedCoffee({ dict }: { dict: Dictionary }) {
           </h2>
         </AnimatedSection>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <AnimatedSection
+          delay={0.1}
+          className="group relative mt-10 aspect-[21/9] w-1/2 overflow-hidden rounded-xl"
+        >
+          <Image
+            src="/images/roastery/packaging.jpeg"
+            alt={r.photoCaption}
+            fill
+            sizes="50vw"
+            loading="eager"
+            className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-105"
+          />
+          <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/90 bg-pine-950/50 px-2 py-1 rounded">
+            {r.photoCaption}
+          </span>
+        </AnimatedSection>
+
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {r.items.map((it, i) => (
             <AnimatedSection
               key={it.number}
@@ -38,47 +50,6 @@ export default function RoastedCoffee({ dict }: { dict: Dictionary }) {
                   {it.number}
                 </span>
                 <p className="mt-3 text-sm leading-relaxed text-ink-500">{it.desc}</p>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
-
-        <div className="mt-10 grid gap-6 border-t border-ink-700/10 pt-10 sm:grid-cols-3">
-          {r.channels.map((ch, i) => (
-            <AnimatedSection
-              key={ch.title}
-              delay={i * 0.06}
-              className="group overflow-hidden rounded-xl border border-ink-700/10 bg-white"
-            >
-              <div className="relative aspect-square overflow-hidden">
-                <Image
-                  src={channelImages[i % channelImages.length]}
-                  alt={ch.title}
-                  fill
-                  sizes="(min-width: 640px) 33vw, 90vw"
-                  loading="eager"
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-                />
-                <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
-                  {ch.photoCaption}
-                </span>
-              </div>
-              <div className="p-6">
-                <span className="font-mono text-[10px] tracking-[0.2em] text-ink-400">
-                  {ch.eyebrowLabel}
-                </span>
-                <h3 className="mt-1 font-display text-xl text-ink-700">{ch.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-500">{ch.desc}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {ch.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-ink-700/15 px-3 py-1 text-xs text-ink-500"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
               </div>
             </AnimatedSection>
           ))}

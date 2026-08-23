@@ -45,24 +45,37 @@ export default function Story({ dict, locale }: { dict: Dictionary; locale: Loca
           </a>
         </AnimatedSection>
 
-        <AnimatedSection delay={0.1} className="grid grid-cols-2 gap-3">
-          <div className="group relative col-span-2 aspect-[4/3] overflow-hidden rounded-xl bg-cream-200">
+        <div className="grid grid-cols-2 gap-3">
+          <AnimatedSection
+            delay={0.15}
+            scale={0.9}
+            blur
+            duration={1.1}
+            className="group relative col-span-2 aspect-[32/17] overflow-hidden rounded-xl bg-cream-200"
+          >
             <Image
-              src="/images/story/packaging.jpeg"
-              alt="Birra Coffee products"
+              src="/images/story/birra-signage.jpeg"
+              alt="Birra Coffee General Trading PLC signage, Addis Ababa"
               fill
               sizes="(min-width: 1024px) 40vw, 90vw"
               loading="eager"
-              className="object-cover object-center transition-transform duration-500 ease-out group-hover:scale-110"
+              className="object-contain object-center transition-transform duration-500 ease-out group-hover:scale-110"
             />
             <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
               {dict.story.captionMain}
             </span>
-          </div>
-          <div className="group relative aspect-square overflow-hidden rounded-xl bg-cream-200">
+          </AnimatedSection>
+
+          <AnimatedSection
+            delay={0.55}
+            scale={0.9}
+            blur
+            duration={1.1}
+            className="group relative aspect-square overflow-hidden rounded-xl bg-cream-200"
+          >
             <Image
-              src="/images/story/cherry-hands.png"
-              alt="Coffee cherry harvest"
+              src="/images/story/founders.jpeg"
+              alt="Birra founders inspecting green coffee"
               fill
               sizes="(min-width: 1024px) 20vw, 45vw"
               loading="eager"
@@ -71,8 +84,15 @@ export default function Story({ dict, locale }: { dict: Dictionary; locale: Loca
             <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
               {dict.story.caption1}
             </span>
-          </div>
-          <div className="group relative aspect-square overflow-hidden rounded-xl bg-cream-200">
+          </AnimatedSection>
+
+          <AnimatedSection
+            delay={0.95}
+            scale={0.9}
+            blur
+            duration={1.1}
+            className="group relative aspect-square overflow-hidden rounded-xl bg-cream-200"
+          >
             <Image
               src="/images/story/roasted-coffee.jpg"
               alt="Roasted coffee beans in the roasting drum"
@@ -84,8 +104,8 @@ export default function Story({ dict, locale }: { dict: Dictionary; locale: Loca
             <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
               {dict.story.caption2}
             </span>
-          </div>
-        </AnimatedSection>
+          </AnimatedSection>
+        </div>
       </Container>
     </section>
   );

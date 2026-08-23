@@ -24,6 +24,20 @@ export default function PackingDocumentation({ dict }: { dict: Dictionary }) {
               </div>
             ))}
           </div>
+
+          <div className="group relative mt-6 aspect-[32/17] overflow-hidden rounded-xl bg-pine-900">
+            <Image
+              src="/images/coffee-export-signage.jpeg"
+              alt={packing.photoCaption}
+              fill
+              sizes="(min-width: 1024px) 40vw, 90vw"
+              loading="eager"
+              className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+            <span className="absolute bottom-3 start-3 font-mono text-[10px] tracking-wide text-cream-100/80 bg-pine-950/40 px-2 py-1 rounded">
+              {packing.photoCaption}
+            </span>
+          </div>
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>

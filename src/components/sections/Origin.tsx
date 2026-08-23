@@ -25,7 +25,7 @@ const ORIGIN_PHOTOS: Record<string, string> = {
   yirgacheffe: "/images/origins/yirgacheffe.webp",
   sidamo: "/images/origins/sidamo.webp",
   guji: "/images/origins/guji.jpg",
-  harrar: "/images/origins/harrar.jpg",
+  harrar: "/images/origins/harrar2.webp",
   limmu: "/images/origins/limmu.jpg",
   jimma: "/images/origins/jimma.jpg",
   nekemte: "/images/origins/lekempti.jpg",
