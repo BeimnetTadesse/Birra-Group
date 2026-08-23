@@ -79,19 +79,19 @@ function TravellingDot({
 export default function GlobalReach({ dict }: { dict: Dictionary }) {
 
   return (
-    <section id="reach" className="texture-lines relative bg-pine-900 py-24 sm:py-32">
+    <section id="reach" className="texture-lines relative bg-pine-900 py-12 sm:py-14">
       <Container>
         <AnimatedSection className="mx-auto max-w-2xl text-center">
           <Eyebrow className="justify-center">{dict.reach.eyebrow}</Eyebrow>
-          <h2 className="mt-5 font-display text-3xl sm:text-4xl lg:text-5xl text-cream-100">
+          <h2 className="mt-4 font-display text-2xl sm:text-3xl lg:text-4xl text-cream-100">
             {dict.reach.title}
           </h2>
-          <p className="mt-5 text-cream-100/70">{dict.reach.subtitle}</p>
+          <p className="mt-3 text-sm sm:text-base text-cream-100/70">{dict.reach.subtitle}</p>
         </AnimatedSection>
 
         <AnimatedSection
           delay={0.1}
-          className="relative mx-auto mt-14 aspect-[1855/848] w-full max-w-4xl overflow-hidden rounded-2xl border border-cream-100/10 bg-pine-950"
+          className="relative mx-auto mt-5 aspect-[1855/848] w-full max-w-2xl overflow-hidden rounded-2xl border border-cream-100/10 bg-pine-950"
         >
           <Image
             src="/images/world-map.jpg"
@@ -168,10 +168,10 @@ export default function GlobalReach({ dict }: { dict: Dictionary }) {
 
         <AnimatedSection
           delay={0.15}
-          className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-cream-100/10 bg-cream-100/10 sm:grid-cols-4"
+          className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-cream-100/10 bg-cream-100/10 sm:grid-cols-4"
         >
           {dict.reach.stats.map((stat) => (
-            <div key={stat.label} className="bg-pine-900 p-5">
+            <div key={stat.label} className="bg-pine-900 p-4">
               <div className="font-mono text-[10px] tracking-[0.2em] text-cream-100/40">
                 {stat.label}
               </div>
@@ -183,7 +183,7 @@ export default function GlobalReach({ dict }: { dict: Dictionary }) {
         </AnimatedSection>
       </Container>
 
-      <div className="mt-10 border-t border-cream-100/10 py-4">
+      <div className="mt-6 border-t border-cream-100/10 py-3">
         <Marquee items={dict.reach.tickerRegions} />
       </div>
     </section>
