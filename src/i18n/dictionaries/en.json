@@ -5,6 +5,7 @@
   },
   "nav": {
     "brandName": "BIRRA GROUP",
+    "home": "Home",
     "about": "About",
     "coffeeExport": "Coffee Export",
     "roastery": "Roastery",
@@ -63,8 +64,8 @@
     "stat2Suffix": "",
     "stat2Label": "BUSINESS OPERATIONS",
     "readMore": "Read our story",
-    "captionMain": "BIRRA COFFEE PRODUCTS",
-    "caption1": "COFFEE CHERRY HARVEST",
+    "captionMain": "BIRRA COFFEE, ADDIS ABABA",
+    "caption1": "COFFEE QUALITY CHECK",
     "caption2": "ROASTED BIRRA COFFEE"
   },
   "origin": {
@@ -223,7 +224,7 @@
   "journey": {
     "eyebrow": "THE JOURNEY",
     "title": "Eight stages between a cherry and your cup",
-    "dragHint": "DRAG TO EXPLORE",
+    "stageLabel": "STAGE",
     "endLabel": "CHERRY → YOUR CUP",
     "stages": [
       {
@@ -239,32 +240,32 @@
       {
         "number": "03",
         "title": "Processing",
-        "desc": "Depulped and fermented, or dried on raised beds — decided lot by lot against the buyer contract."
+        "desc": "Washed or natural — decided lot by lot against the buyer contract."
       },
       {
         "number": "04",
-        "title": "Drying",
-        "desc": "Sun-dried on raised beds or patios, turned by hand and monitored until target moisture is reached."
+        "title": "Quality Control",
+        "desc": "Graded, cleaned and cupped by trained tasters before it moves on."
       },
       {
         "number": "05",
-        "title": "Milling & Hulling",
-        "desc": "Parchment and dried skin removed, beans cleaned and sized ahead of grading."
+        "title": "Roasting",
+        "desc": "Selected lots roasted in-house, profiled to bring out each origin's character."
       },
       {
         "number": "06",
-        "title": "Grading & Cupping",
-        "desc": "Sorted by screen size and density, then cupped by trained tasters to verify quality and grade."
+        "title": "Packaging",
+        "desc": "Packed for export, wholesale or retail, in food-grade materials."
       },
       {
         "number": "07",
-        "title": "Export Preparation",
-        "desc": "Bagged, documented and compliance-checked, with full lot records prepared for shipment."
+        "title": "Export",
+        "desc": "Documented, compliance-checked and shipped from the port of Djibouti."
       },
       {
         "number": "08",
-        "title": "Shipping",
-        "desc": "Containerized and shipped from the port of Djibouti to markets across the world."
+        "title": "Customer",
+        "desc": "From Birra's hands to yours — export partners, wholesalers and everyday drinkers."
       }
     ]
   },
@@ -564,8 +565,7 @@
       "Coffee Roastery",
       "About Birra Group",
       "Quality",
-      "Insights",
-      "Gallery"
+      "Insights"
     ],
     "languageTitle": "LANGUAGE",
     "rightsText": "Birra Coffee General Trading PLC. All rights reserved.",
@@ -680,7 +680,8 @@
           "desc": "Roastery output for roasted product",
           "tag": "On request"
         }
-      ]
+      ],
+      "photoCaption": "BIRRA COFFEE, ADDIS ABABA"
     },
     "documents": {
       "title": "Documentation pack",
@@ -899,7 +900,8 @@
             "Food-grade packing"
           ]
         }
-      ]
+      ],
+      "photoCaption": "PACKED & READY FOR MARKET"
     },
     "privateLabel": {
       "eyebrow": "PRIVATE LABEL",

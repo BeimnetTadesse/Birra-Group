@@ -27,11 +27,11 @@ export default function Header({
   }, []);
 
   const links = [
+    { href: `/${locale}#hero`, label: dict.nav.home },
     { href: `/${locale}/about`, label: dict.nav.about },
     { href: `/${locale}/coffee-export`, label: dict.nav.coffeeExport },
     { href: `/${locale}/roastery`, label: dict.nav.roastery },
     { href: `/${locale}/insights`, label: dict.nav.insights },
-    { href: `/${locale}/gallery`, label: dict.nav.gallery },
     { href: `/${locale}/contact`, label: dict.nav.contact },
   ];
 

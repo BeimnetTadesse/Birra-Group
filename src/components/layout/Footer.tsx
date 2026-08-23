@@ -63,7 +63,6 @@ export default function Footer({
                 `/${locale}/about`,
                 `/${locale}/coffee-export#quality`,
                 `/${locale}/insights`,
-                `/${locale}/gallery`,
               ];
               return (
                 <li key={label}>
