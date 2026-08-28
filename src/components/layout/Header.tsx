@@ -32,6 +32,7 @@ export default function Header({
     { href: `/${locale}/coffee-export`, label: dict.nav.coffeeExport },
     { href: `/${locale}/roastery`, label: dict.nav.roastery },
     { href: `/${locale}/insights`, label: dict.nav.insights },
+    { href: `/${locale}/blog`, label: dict.nav.blog },
     { href: `/${locale}/contact`, label: dict.nav.contact },
   ];
 
