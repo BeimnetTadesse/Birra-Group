@@ -12,7 +12,8 @@
     "gallery": "Gallery",
     "contact": "Contact",
     "instantQuote": "Explore Origins",
-    "insights": "Insights"
+    "insights": "Insights",
+    "blog": "Blog"
   },
   "marquee": [
     "PREMIUM ETHIOPIAN ARABICA",
@@ -565,7 +566,8 @@
       "Coffee Roastery",
       "About Birra Group",
       "Quality",
-      "Insights"
+      "Insights",
+      "Blog"
     ],
     "languageTitle": "LANGUAGE",
     "rightsText": "Birra Coffee General Trading PLC. All rights reserved.",
@@ -807,6 +809,13 @@
           "linkLabel": "Explore the roastery"
         }
       ]
+    },
+    "recognition": {
+      "eyebrow": "RECOGNITION",
+      "title": "Birra Group",
+      "body1": "Birra Group is one of Ethiopia's leading diversified business groups, committed to creating jobs, supporting local industries, and contributing to the country's growth.",
+      "body2": "The group has also been recognized for its outstanding contribution to government revenue, paying one of the highest amounts in taxes and receiving recognition for its contribution. It's a reflection of our commitment to doing business responsibly and building a stronger Ethiopia.",
+      "badge": "Top government revenue contributor"
     }
   },
   "roasteryPage": {
@@ -1215,6 +1224,14 @@
       "byline": "Birra Group",
       "category": "Origins",
       "tocLabel": "In this article"
+    },
+    "blog": {
+      "eyebrow": "BIRRA JOURNAL",
+      "title": "News and announcements from Birra Group",
+      "subtitle": "Export milestones, new partnerships, certifications and updates from across the group.",
+      "emptyState": "No posts yet — check back soon.",
+      "readMore": "Read more",
+      "backToBlog": "Back to Journal"
     }
   }
 }

@@ -50,7 +50,7 @@ export default function Journey({ dict }: { dict: Dictionary }) {
   const stage = j.stages[active];
 
   return (
-    <section id="journey" className="relative bg-cream-50 py-14 sm:py-16">
+    <section id="journey" className="relative border-t border-ink-700/10 bg-cream-50 py-14 sm:py-16">
       <Container>
         <AnimatedSection>
           <Eyebrow>{j.eyebrow}</Eyebrow>

@@ -4,6 +4,7 @@ import { getDictionary } from "@/i18n/getDictionary";
 import AboutHero from "@/components/sections/AboutHero";
 import Milestones from "@/components/sections/Milestones";
 import CoreValues from "@/components/sections/CoreValues";
+import Recognition from "@/components/sections/Recognition";
 import ResponsibleSourcing from "@/components/sections/ResponsibleSourcing";
 
 export async function generateMetadata({
@@ -31,6 +32,7 @@ export default async function AboutPage({
       <AboutHero dict={dict} />
       <Milestones dict={dict} />
       <CoreValues dict={dict} />
+      <Recognition dict={dict} />
       <ResponsibleSourcing dict={dict} />
     </>
   );
