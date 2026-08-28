@@ -5,8 +5,6 @@ import InsightsHero from "@/components/sections/InsightsHero";
 import MarketReference from "@/components/sections/MarketReference";
 import Featured from "@/components/sections/Featured";
 import InsightGrid from "@/components/sections/InsightGrid";
-import BirraJournal from "@/components/sections/BirraJournal";
-import InsightsFinalCta from "@/components/sections/InsightsFinalCta";
 import { getCoffeePrice } from "@/lib/market-price";
 
 // Rebuild this page hourly so the benchmark stays current without calling the
@@ -50,7 +48,7 @@ export default async function InsightsPage({
         title={i.coffeeMarket.title}
         cards={i.coffeeMarket.cards}
         ctaLabel={i.coffeeMarket.ctaLabel}
-        ctaHref="#journal"
+        ctaHref={`/${locale}/blog`}
       />
       <InsightGrid
         eyebrow={i.globalIndustry.eyebrow}
@@ -58,9 +56,6 @@ export default async function InsightsPage({
         cards={i.globalIndustry.cards}
         black
       />
-
-      <BirraJournal dict={dict} />
-      <InsightsFinalCta dict={dict} locale={locale} />
     </>
   );
 }
