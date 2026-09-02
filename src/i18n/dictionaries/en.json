@@ -450,7 +450,7 @@
       {
         "number": "06",
         "title": "Real Estate",
-        "desc": "Commercial property development and rental services, including offices, shops and commercial buildings in Addis Ababa and Dire Dawa."
+        "desc": "Commercial and residential property including Birra Mall in Dire Dawa and Birra Living furnished apartments in Addis Ababa."
       }
     ]
   },
@@ -1233,5 +1233,21 @@
       "readMore": "Read more",
       "backToBlog": "Back to Journal"
     }
+  },
+  "discoverBirra": {
+    "eyebrow": "BEYOND COFFEE",
+    "title": "Discover Birra Group",
+    "mall": {
+      "label": "BIRRA MALL · DIRE DAWA",
+      "title": "Birra Mall",
+      "desc": "Birra Mall is now open and operating in Dire Dawa, bringing you a diverse shopping experience with a wide range of products and services."
+    },
+    "living": {
+      "label": "BIRRA LIVING · ADDIS ABABA",
+      "title": "Birra Living",
+      "desc": "Birra Living offers fully furnished apartments in Addis Ababa, designed to provide comfort, convenience, and a modern living experience."
+    },
+    "summary": "From shopping and hospitality to living and beyond, Birra Group brings diverse businesses and experiences together under one group.",
+    "tagline": "Explore. Experience. Enjoy the diversity of Birra Group."
   }
 }
