@@ -5,6 +5,11 @@ import Container from "@/components/ui/Container";
 import LogoMark from "@/components/ui/Logo";
 import LanguageSwitcher from "./LanguageSwitcher";
 
+// Coffee Export now lives on its own deployment — this site only links out
+// to it, it no longer has a page here.
+const EXPORT_URL =
+  process.env.NEXT_PUBLIC_BIRRA_EXPORT_URL ?? "https://birra-coffee-export.vercel.app/en";
+
 export default function Footer({
   locale,
   dict,
@@ -56,12 +61,10 @@ export default function Footer({
           <ul className="mt-4 space-y-3 text-sm">
             {dict.footer.exploreLinks.map((label, i) => {
               const hrefs = [
-                `/${locale}#origin`,
+                `/${locale}#business`,
                 `/${locale}#availability`,
-                `/${locale}/coffee-export`,
-                `/${locale}/roastery`,
                 `/${locale}/about`,
-                `/${locale}/coffee-export#quality`,
+                `${EXPORT_URL}#capacity`,
                 `/${locale}/insights`,
                 `/${locale}/blog`,
               ];

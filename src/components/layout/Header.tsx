@@ -29,8 +29,6 @@ export default function Header({
   const links = [
     { href: `/${locale}#hero`, label: dict.nav.home },
     { href: `/${locale}/about`, label: dict.nav.about },
-    { href: `/${locale}/coffee-export`, label: dict.nav.coffeeExport },
-    { href: `/${locale}/roastery`, label: dict.nav.roastery },
     { href: `/${locale}/insights`, label: dict.nav.insights },
     { href: `/${locale}/blog`, label: dict.nav.blog },
     { href: `/${locale}/contact`, label: dict.nav.contact },
@@ -65,7 +63,7 @@ export default function Header({
           <div className="hidden lg:flex items-center gap-4 lg:me-6">
             <LanguageSwitcher locale={locale} />
             <a
-              href={`/${locale}#origin`}
+              href={`/${locale}#business`}
               className="rounded-full bg-gold-400 px-5 py-2 text-sm font-medium tracking-wide text-pine-950 transition-colors hover:bg-gold-300"
             >
               {dict.nav.instantQuote}
@@ -112,7 +110,7 @@ export default function Header({
                 </a>
               ))}
               <a
-                href={`/${locale}#origin`}
+                href={`/${locale}#business`}
                 onClick={() => setOpen(false)}
                 className="inline-block w-fit rounded-full bg-gold-400 px-5 py-2 text-sm font-medium text-pine-950"
               >

@@ -11,7 +11,7 @@
     "roastery": "Roastery",
     "gallery": "Gallery",
     "contact": "Contact",
-    "instantQuote": "Explore Origins",
+    "instantQuote": "Our Businesses",
     "insights": "Insights",
     "blog": "Blog"
   },
@@ -24,10 +24,10 @@
   ],
   "hero": {
     "eyebrow": "ADDIS ABABA · EST. 2010",
-    "titleLine1": "Ethiopian Coffee.",
-    "titlePrefix": "From Origin to",
-    "titleWorld": "World.",
-    "subtitle": "Carefully sourced, graded and exported from Ethiopia.",
+    "titleLine1": "The Face of",
+    "titlePrefix": "Ethiopian",
+    "titleWorld": "Enterprise.",
+    "subtitle": "Birra Group is one of Ethiopia's leading diversified enterprises.",
     "ctaPrimary": "Explore our coffee",
     "ctaSecondary": "Partner with us",
     "stats": [
@@ -419,39 +419,17 @@
   },
   "ourBusiness": {
     "eyebrow": "OUR BUSINESS",
-    "title": "Six businesses, one enterprise",
+    "title": "Multiple businesses, one enterprise",
     "subtitle": "A diversified group built around Ethiopian coffee — from export to roastery, trading, processing, hospitality and real estate.",
     "items": [
-      {
-        "number": "01",
-        "title": "Coffee Export",
-        "desc": "Premium Ethiopian Arabica green coffee sourced from renowned origins including Yirgacheffe, Sidama, Guji, Harar, Limu, Jimma and Lekempti, serving international buyers across Europe, North America, the Middle East and Asia."
-      },
-      {
-        "number": "02",
-        "title": "Coffee Roastery",
-        "desc": "Roasted and ground Ethiopian coffee produced at Birra's roasting facilities in Dire Dawa and Sheger City, serving local and international markets."
-      },
-      {
-        "number": "03",
-        "title": "Import & Trading",
-        "desc": "International sourcing and distribution of construction materials, steel products, automobiles, machinery, office supplies, food items and other industrial and consumer goods."
-      },
-      {
-        "number": "04",
-        "title": "Quality & Processing",
-        "desc": "Modern coffee processing, cleaning and color sorting, supported by strict quality control and experienced hand selection to prepare export-quality coffee."
-      },
-      {
-        "number": "05",
-        "title": "Café & Hospitality",
-        "desc": "A modern café experience in Addis Ababa, bringing freshly roasted Ethiopian coffee, traditional coffee culture and hospitality together."
-      },
-      {
-        "number": "06",
-        "title": "Real Estate",
-        "desc": "Commercial and residential property including Birra Mall in Dire Dawa and Birra Living furnished apartments in Addis Ababa."
-      }
+      { "number": "01", "title": "Coffee Export", "desc": "Premium Ethiopian Arabica green coffee for international buyers." },
+      { "number": "02", "title": "Coffee Roastery", "desc": "Roasted and ground coffee for local and export markets." },
+      { "number": "03", "title": "Birra Living", "desc": "Furnished apartments for booking in Addis Ababa." },
+      { "number": "04", "title": "Birra Brew Cafe", "desc": "A modern café experience rooted in Ethiopian coffee culture." },
+      { "number": "05", "title": "Trading and Import", "desc": "International sourcing and distribution of goods and materials." },
+      { "number": "06", "title": "Manufacturing", "desc": "Industrial and production capabilities supporting the group." },
+      { "number": "07", "title": "Real Estate", "desc": "Commercial and residential property across Ethiopia." },
+      { "number": "08", "title": "Birra Mall", "desc": "A retail and shopping destination in Dire Dawa." }
     ]
   },
   "why": {
@@ -560,10 +538,8 @@
     "addressLine2": "Ethio China St, Addis Ababa",
     "exploreTitle": "EXPLORE",
     "exploreLinks": [
-      "Origins",
+      "Our Businesses",
       "Coffee",
-      "Coffee Export",
-      "Coffee Roastery",
       "About Birra Group",
       "Quality",
       "Insights",
@@ -1077,20 +1053,20 @@
       ]
     },
     "globalIndustry": {
-      "eyebrow": "GLOBAL COFFEE INDUSTRY",
-      "title": "The bigger picture beyond Ethiopia",
+      "eyebrow": "ACROSS THE GROUP",
+      "title": "Beyond coffee: insights across the group",
       "cards": [
         {
-          "title": "Where the World's Coffee Comes From",
-          "body": "A look at the producing regions that supply the global coffee trade."
+          "title": "Why Ethiopian Enterprises Are Diversifying",
+          "body": "How trading, manufacturing, hospitality and real estate grow alongside a coffee export core."
         },
         {
-          "title": "Climate, Production & the Future of Coffee",
-          "body": "How shifting growing conditions are reshaping where — and how — coffee can be produced."
+          "title": "Real Estate & Retail in a Growing Addis Ababa",
+          "body": "What's driving demand for commercial space, malls and serviced apartments in Ethiopia's capital."
         },
         {
-          "title": "How Global Demand Shapes Coffee Trade",
-          "body": "Consumption trends across major markets, and their effect on sourcing and trade flows."
+          "title": "Trade and Manufacturing: Ethiopia's Other Growth Engines",
+          "body": "A look at the import, trading and manufacturing sectors alongside the country's coffee economy."
         }
       ]
     },

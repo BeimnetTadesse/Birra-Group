@@ -118,7 +118,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
 
             <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-6">
               <a
-                href="#origin"
+                href="#business"
                 className="rounded-full bg-gold-400 px-8 py-3.5 text-sm font-medium tracking-wide text-pine-950 transition-all hover:scale-105 hover:bg-gold-300"
               >
                 {dict.hero.ctaPrimary}

@@ -4,6 +4,11 @@ import type { Locale } from "@/i18n/config";
 import Container from "@/components/ui/Container";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
+// Coffee Export now lives on its own deployment — this site only links out
+// to it, it no longer has a page here.
+const EXPORT_URL =
+  process.env.NEXT_PUBLIC_BIRRA_EXPORT_URL ?? "https://birra-coffee-export.vercel.app/en";
+
 /**
  * The long-form article behind the /insights "Featured" card. Its own route
  * rather than a scroll-to on another page, so it reads as a real piece of
@@ -234,7 +239,7 @@ export default function EthiopianOriginsArticle({
 
                 <div className="mt-7 flex flex-wrap items-center gap-5">
                   <a
-                    href={`/${locale}/coffee-export`}
+                    href={EXPORT_URL}
                     className="inline-flex items-center justify-center rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold text-pine-950 transition-colors hover:bg-gold-300"
                   >
                     {a.birra.exportCta} →

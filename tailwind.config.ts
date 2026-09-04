@@ -45,12 +45,17 @@ const config: Config = {
       },
       animation: {
         "fade-up": "fadeUp 0.8s ease forwards",
+        "fade-in": "fadeIn 0.5s ease forwards",
         "bounce-slow": "bounceSlow 2.2s ease-in-out infinite",
         marquee: "marquee 28s linear infinite",
       },
       keyframes: {
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(24px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeIn: {
+          "0%": { opacity: "0", transform: "translateY(8px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         bounceSlow: {
