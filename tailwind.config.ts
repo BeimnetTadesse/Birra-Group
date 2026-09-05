@@ -48,6 +48,7 @@ const config: Config = {
         "fade-in": "fadeIn 0.5s ease forwards",
         "bounce-slow": "bounceSlow 2.2s ease-in-out infinite",
         marquee: "marquee 28s linear infinite",
+        "spin-slow": "spin 16s linear infinite",
       },
       keyframes: {
         fadeUp: {

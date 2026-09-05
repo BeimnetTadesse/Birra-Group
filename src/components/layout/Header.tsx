@@ -44,8 +44,11 @@ export default function Header({
         }`}
       >
         <Container className="flex items-center justify-between">
-          <Link href={`/${locale}#hero`} className="flex items-center lg:ms-6">
-            <LogoMark className="h-8" />
+          <Link href={`/${locale}#hero`} className="flex items-center gap-3 lg:ms-6">
+            <LogoMark className="h-14" />
+            <span className="font-display text-lg tracking-wide text-cream-100">
+              {dict.nav.brandName}
+            </span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10">

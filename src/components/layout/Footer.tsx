@@ -23,8 +23,11 @@ export default function Footer({
     <footer className="bg-pine-900">
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-1">
-          <Link href={`/${locale}#hero`} className="inline-flex items-center">
+          <Link href={`/${locale}#hero`} className="inline-flex items-center gap-2.5">
             <LogoMark className="h-8" />
+            <span className="font-display text-base tracking-wide text-cream-100">
+              {dict.nav.brandName}
+            </span>
           </Link>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream-100/60">
             {dict.footer.description}

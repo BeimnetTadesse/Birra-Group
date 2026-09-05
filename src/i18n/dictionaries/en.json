@@ -34,12 +34,12 @@
       {
         "value": "Premium",
         "suffix": "",
-        "label": "COFFEE QUALITY"
+        "label": "GROUP STANDARD"
       },
       {
-        "value": "100",
-        "suffix": "%",
-        "label": "ETHIOPIAN ARABICA"
+        "value": "Trusted",
+        "suffix": "",
+        "label": "TRADING & IMPORT PARTNER"
       },
       {
         "value": "Global",
@@ -421,6 +421,7 @@
     "eyebrow": "OUR BUSINESS",
     "title": "Multiple businesses, one enterprise",
     "subtitle": "A diversified group built around Ethiopian coffee — from export to roastery, trading, processing, hospitality and real estate.",
+    "visitCta": "Visit {title}",
     "items": [
       { "number": "01", "title": "Coffee Export", "desc": "Premium Ethiopian Arabica green coffee for international buyers." },
       { "number": "02", "title": "Coffee Roastery", "desc": "Roasted and ground coffee for local and export markets." },
