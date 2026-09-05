@@ -1,9 +1,12 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import type { Dictionary } from "@/i18n/getDictionary";
 import Container from "@/components/ui/Container";
-import CountUp from "@/components/ui/CountUp";
+import BusinessRing from "@/components/sections/BusinessRing";
+
+const RING_ADVANCE_MS = 4000;
 
 const container = {
   hidden: {},
@@ -21,79 +24,28 @@ const item = {
   },
 };
 
-// Starting number shown immediately on load, very close to the final value so
-// the counters never visibly sit at 0 and don't count up by much.
-function startValueFor(value: number) {
-  if (value <= 1) return value;
-  if (value < 50) return Math.max(0, Math.round(value * 0.9));
-  if (value < 1000) return Math.round(value * 0.96);
-  return Math.round(value * 0.985);
-}
-
 export default function Hero({ dict }: { dict: Dictionary }) {
-  const renderStatValue = (value: string, suffix: string) => {
-    // If value contains a space (like "Top 20"), only the trailing number counts up
-    if (value.toLowerCase().startsWith("top ") || value.toLowerCase().startsWith("من أفضل ")) {
-      const parts = value.split(" ");
-      const numberPart = Number(parts.pop()?.replace(/,/g, "") ?? 0);
-      const textPart = parts.join(" ");
-      return (
-        <span className="font-display text-3xl sm:text-4xl lg:text-[42px] font-normal text-cream-100 leading-none">
-          {textPart}{" "}
-          <span className="text-gold-400">
-            <CountUp value={numberPart} from={startValueFor(numberPart)} delay={0} />
-          </span>
-        </span>
-      );
-    }
-    const numeric = Number(value.replace(/,/g, ""));
-    // Non-numeric values (e.g. "PREMIUM", "GLOBAL") render as-is, no count-up.
-    if (Number.isNaN(numeric)) {
-      return (
-        <span className="font-display text-2xl sm:text-3xl lg:text-4xl font-normal text-cream-100 leading-tight">
-          {value}
-        </span>
-      );
-    }
-    return (
-      <span className="font-display text-2xl sm:text-3xl lg:text-4xl font-normal text-cream-100 leading-none">
-        <CountUp value={numeric} from={startValueFor(numeric)} delay={0} />
-        {suffix && (
-          <span className="ms-1 text-base font-sans font-normal text-gold-400">
-            {suffix}
-          </span>
-        )}
-      </span>
+  const ringItems = dict.ourBusiness.items;
+  const [ringActive, setRingActive] = useState(0);
+  const [ringPaused, setRingPaused] = useState(false);
+
+  useEffect(() => {
+    if (ringPaused) return;
+    const id = setInterval(
+      () => setRingActive((i) => (i + 1) % ringItems.length),
+      RING_ADVANCE_MS,
     );
-  };
+    return () => clearInterval(id);
+  }, [ringPaused, ringItems.length]);
 
   return (
     <section
       id="hero"
-      className="relative flex min-h-[650px] sm:min-h-[100dvh] w-full items-stretch overflow-hidden bg-pine-950 pb-12 pt-32 sm:pb-16"
+      className="texture-lines relative flex min-h-[650px] sm:min-h-[100dvh] w-full items-center overflow-hidden bg-pine-900 py-20 lg:py-28"
     >
-      <video
-        className="absolute inset-0 h-full w-full object-cover"
-        src="/videos/hero.mp4"
-        poster="/images/hero-poster.jpg"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-      {/* Slight neutral dim across the whole video — no color cast, just a touch darker */}
-      <div className="absolute inset-0 bg-black/15" />
-
-      {/* Left-to-right gradient — only for text legibility on the left, video stays untouched from center to the right */}
-      <div className="absolute inset-0 bg-gradient-to-r from-pine-950/90 via-pine-950/20 to-transparent" />
-      
-      {/* Texture lines overlay on top of video */}
-      <div className="texture-lines absolute inset-0 opacity-80 pointer-events-none" />
-
-      <Container className="relative z-10 flex flex-col justify-between pt-6">
-        {/* Main Content & Stats */}
-        <motion.div variants={container} initial={false} animate="show" className="mt-16 sm:mt-20 w-full text-start">
-          <div className="max-w-5xl">
+      <Container className="relative z-10">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+          <motion.div variants={container} initial={false} animate="show" className="max-w-2xl">
             <motion.span
               variants={item}
               className="inline-flex items-center gap-3 font-mono text-xs tracking-[0.25em] text-gold-400"
@@ -104,7 +56,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
 
             <motion.h1
               variants={item}
-              className="mt-8 font-display font-normal text-5xl sm:text-7xl lg:text-[82px] leading-[1.08] text-cream-100 tracking-tight"
+              className="mt-6 font-display font-normal text-4xl sm:text-5xl lg:text-6xl leading-[1.12] text-cream-100 tracking-tight"
             >
               {dict.hero.titleLine1}
               <br />
@@ -112,11 +64,11 @@ export default function Hero({ dict }: { dict: Dictionary }) {
               <span className="font-display italic text-gold-400">{dict.hero.titleWorld}</span>
             </motion.h1>
 
-            <motion.p variants={item} className="mt-8 max-w-2xl text-sm sm:text-base font-normal text-cream-100/75 leading-relaxed">
+            <motion.p variants={item} className="mt-6 max-w-xl text-sm sm:text-base font-normal text-cream-100/75 leading-relaxed">
               {dict.hero.subtitle}
             </motion.p>
 
-            <motion.div variants={item} className="mt-10 flex flex-wrap items-center gap-6">
+            <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-6">
               <a
                 href="#business"
                 className="rounded-full bg-gold-400 px-8 py-3.5 text-sm font-medium tracking-wide text-pine-950 transition-all hover:scale-105 hover:bg-gold-300"
@@ -130,22 +82,23 @@ export default function Hero({ dict }: { dict: Dictionary }) {
                 {dict.hero.ctaSecondary}
               </a>
             </motion.div>
-          </div>
-
-          <motion.div
-            variants={item}
-            className="mt-12 border-t border-cream-100/10 pt-8 grid grid-cols-2 gap-y-8 gap-x-6 sm:grid-cols-4 w-full"
-          >
-            {dict.hero.stats.map((stat) => (
-              <div key={stat.label} className="text-center flex flex-col items-center justify-between">
-                <div>{renderStatValue(stat.value, stat.suffix)}</div>
-                <div className="mt-3 font-mono text-[9px] sm:text-[10px] tracking-[0.2em] text-cream-100/40 uppercase leading-relaxed">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
           </motion.div>
-        </motion.div>
+
+          <div
+            className="flex flex-col justify-center"
+            onMouseEnter={() => setRingPaused(true)}
+            onMouseLeave={() => setRingPaused(false)}
+          >
+            <BusinessRing
+              items={ringItems}
+              active={ringActive}
+              onSelect={setRingActive}
+              glideSeconds={(RING_ADVANCE_MS / 1000) * 0.92}
+              glideEase="linear"
+              responsive
+            />
+          </div>
+        </div>
       </Container>
     </section>
   );

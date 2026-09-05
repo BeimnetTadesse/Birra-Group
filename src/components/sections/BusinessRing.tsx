@@ -30,6 +30,7 @@ export default function BusinessRing({
   onSelect,
   glideSeconds = 0.6,
   glideEase = [0.22, 1, 0.36, 1],
+  responsive = false,
 }: {
   items: Item[];
   active: number;
@@ -41,11 +42,23 @@ export default function BusinessRing({
   /** "linear" reads as constant, unbroken motion for a continuously-gliding
    * ring; the default eased curve suits a quick snap-then-settle instead. */
   glideEase?: "linear" | number[];
+  /** Our Business hides the ring below lg (a plain list stands in instead,
+   * rendered by the caller) and uses a fixed height sized for that section's
+   * wide column. The hero has no such fallback, so it opts into this instead:
+   * always visible, and aspect-square rather than a fixed height so the
+   * circle geometry still holds at any container width, mobile included. */
+  responsive?: boolean;
 }) {
   const count = items.length;
 
   return (
-    <div className="relative hidden h-[460px] w-full lg:block">
+    <div
+      className={
+        responsive
+          ? "relative mx-auto aspect-square w-full max-w-[460px]"
+          : "relative hidden h-[460px] w-full lg:block"
+      }
+    >
       <div className="absolute inset-x-[14%] inset-y-[12%] rounded-full border border-cream-100/10" />
       {items.map((it, i) => {
         const slot = (i - active + count) % count;
@@ -55,6 +68,7 @@ export default function BusinessRing({
           <motion.button
             key={it.number}
             onClick={() => onSelect(i)}
+            initial={false}
             animate={{
               top: pos.top,
               left: pos.left,
@@ -62,20 +76,22 @@ export default function BusinessRing({
             }}
             transition={{ duration: glideSeconds, ease: glideEase }}
             style={{ zIndex: isActive ? 20 : 10 - slot, x: "-50%", y: "-50%" }}
-            className={`absolute w-[32%] rounded-xl p-4 text-start shadow-xl transition-colors duration-500 ${
+            className={`absolute w-[32%] rounded-xl p-2 text-start shadow-xl transition-colors duration-500 sm:p-4 ${
               isActive
                 ? "bg-gold-400 text-pine-950"
                 : "border border-cream-100/10 bg-cream-100/[0.06] text-cream-100/70 backdrop-blur-sm hover:bg-cream-100/10"
             }`}
           >
             <span
-              className={`font-mono text-[10px] tracking-[0.2em] ${
+              className={`font-mono text-[8px] tracking-[0.2em] sm:text-[10px] ${
                 isActive ? "text-pine-900/60" : "text-gold-400/70"
               }`}
             >
               {it.number}
             </span>
-            <div className="mt-1 font-display text-sm sm:text-base">{it.title}</div>
+            <div className="mt-1 font-display text-[11px] leading-tight sm:text-sm lg:text-base">
+              {it.title}
+            </div>
           </motion.button>
         );
       })}

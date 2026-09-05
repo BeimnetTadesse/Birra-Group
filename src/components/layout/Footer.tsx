@@ -25,8 +25,9 @@ export default function Footer({
         <div className="lg:col-span-1">
           <Link href={`/${locale}#hero`} className="inline-flex items-center gap-2.5">
             <LogoMark className="h-8" />
-            <span className="font-display text-base tracking-wide text-cream-100">
-              {dict.nav.brandName}
+            <span className="font-display text-base tracking-wide">
+              <span className="text-[#14532d]">{dict.nav.brandNamePart1}</span>{" "}
+              <span className="text-gold-400">{dict.nav.brandNamePart2}</span>
             </span>
           </Link>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream-100/60">

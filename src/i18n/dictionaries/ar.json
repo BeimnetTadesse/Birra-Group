@@ -5,6 +5,8 @@
   },
   "nav": {
     "brandName": "بيرا جروب",
+    "brandNamePart1": "بيرا",
+    "brandNamePart2": "جروب",
     "home": "الرئيسية",
     "about": "من نحن",
     "coffeeExport": "تصدير القهوة",

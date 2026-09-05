@@ -5,6 +5,8 @@
   },
   "nav": {
     "brandName": "BIRRA GROUP",
+    "brandNamePart1": "BIRRA",
+    "brandNamePart2": "GROUP",
     "home": "Home",
     "about": "About",
     "coffeeExport": "Coffee Export",
