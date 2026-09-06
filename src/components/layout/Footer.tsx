@@ -24,10 +24,14 @@ export default function Footer({
       <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="lg:col-span-1">
           <Link href={`/${locale}#hero`} className="inline-flex items-center gap-2.5">
-            <LogoMark className="h-8" />
-            <span className="font-display text-base tracking-wide">
-              <span className="text-[#14532d]">{dict.nav.brandNamePart1}</span>{" "}
-              <span className="text-gold-400">{dict.nav.brandNamePart2}</span>
+            <LogoMark className="h-9" />
+            <span className="flex flex-col leading-none">
+              <span className="font-display text-base font-bold text-[#14532d]">
+                {dict.nav.brandNamePart1}
+              </span>
+              <span className="mt-1 text-[9px] font-semibold tracking-[0.25em] text-gold-400">
+                {dict.nav.brandNamePart2}
+              </span>
             </span>
           </Link>
           <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream-100/60">

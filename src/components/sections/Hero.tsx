@@ -46,17 +46,9 @@ export default function Hero({ dict }: { dict: Dictionary }) {
       <Container className="relative z-10">
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <motion.div variants={container} initial={false} animate="show" className="max-w-2xl">
-            <motion.span
-              variants={item}
-              className="inline-flex items-center gap-3 font-mono text-xs tracking-[0.25em] text-gold-400"
-            >
-              <span className="h-px w-10 bg-gold-400" />
-              {dict.hero.eyebrow}
-            </motion.span>
-
             <motion.h1
               variants={item}
-              className="mt-6 font-display font-normal text-4xl sm:text-5xl lg:text-6xl leading-[1.12] text-cream-100 tracking-tight"
+              className="font-display font-normal text-4xl sm:text-5xl lg:text-6xl leading-[1.12] text-cream-100 tracking-tight"
             >
               {dict.hero.titleLine1}
               <br />

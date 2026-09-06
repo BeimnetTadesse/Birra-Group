@@ -46,9 +46,13 @@ export default function Header({
         <Container className="flex items-center justify-between">
           <Link href={`/${locale}#hero`} className="flex items-center gap-3 lg:ms-6">
             <LogoMark className="h-14" />
-            <span className="font-display text-lg tracking-wide">
-              <span className="text-[#14532d]">{dict.nav.brandNamePart1}</span>{" "}
-              <span className="text-gold-400">{dict.nav.brandNamePart2}</span>
+            <span className="flex flex-col leading-none">
+              <span className="font-display text-xl font-bold text-[#14532d]">
+                {dict.nav.brandNamePart1}
+              </span>
+              <span className="mt-1 text-[10px] font-semibold tracking-[0.25em] text-gold-400">
+                {dict.nav.brandNamePart2}
+              </span>
             </span>
           </Link>
 

@@ -5,10 +5,6 @@ import Image from "next/image";
  * arc and a travelling dot — turns slowly around it. Pure CSS/SVG, no JS: the
  * ring is a plain animate-spin-slow rotation, so it costs nothing at render
  * and respects prefers-reduced-motion via motion-reduce:animate-none.
- *
- * Colours are light-on-dark (cream/gold) rather than the ink tones used
- * elsewhere for hairlines, since this mark only ever sits on a dark surface
- * — the header overlay and the pine footer.
  */
 export default function LogoMark({ className = "h-10" }: { className?: string }) {
   return (
@@ -47,9 +43,12 @@ export default function LogoMark({ className = "h-10" }: { className?: string })
         <circle cx="50" cy="50" r="3" fill="#f7f2e6" transform="rotate(150 50 50) translate(0 -47)" />
       </svg>
 
-      <span className="relative h-[62%] w-[62%] overflow-hidden rounded-full bg-cream-100 p-[18%] shadow-sm">
+      <span
+        className="relative w-[52%] overflow-hidden rounded-lg bg-cream-100"
+        style={{ aspectRatio: "280/340" }}
+      >
         <Image
-          src="/images/logo-mark.png"
+          src="/images/logo-bean.png"
           alt="Birra Group"
           fill
           sizes="80px"
