@@ -41,7 +41,7 @@ export default function Hero({ dict }: { dict: Dictionary }) {
   return (
     <section
       id="hero"
-      className="texture-lines relative flex min-h-[650px] sm:min-h-[100dvh] w-full items-center overflow-hidden bg-pine-900 py-20 lg:py-28"
+      className="texture-lines relative flex min-h-[650px] sm:min-h-[100dvh] w-full items-center overflow-hidden bg-pine-900 pb-20 pt-32 lg:pb-28 lg:pt-28"
     >
       <Container className="relative z-10">
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
